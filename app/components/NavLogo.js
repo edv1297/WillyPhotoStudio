@@ -74,7 +74,7 @@ export default class NavLogo extends React.Component{
 
 		return (
 			<div id="logo-main" className={this.state.classes.join(" ")}>
-				<img src="logoblack.png" height={this.state.logoHeight + "px"}/>
+				<img src="assets/logoblack.png" height={this.state.logoHeight + "px"}/>
 			</div>
 		);
 	}
