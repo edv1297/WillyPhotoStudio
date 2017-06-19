@@ -1,13 +1,13 @@
-  @font-face {
-			  font-family: 'AvenirLight';
-			  src: url('AvenirLTStd-Light.otf') format('opentype');
-			}
+@font-face {
+	font-family: 'AvenirLight';
+	src: url('AvenirLTStd-Light.otf') format('opentype');
+}
 
-      @font-face {
-			  font-family: 'AvenirRoman';
-			  src: url('AvenirLTStd-Roman.otf') format('opentype');
-			}
+@font-face {
+	font-family: 'AvenirRoman';
+	src: url('AvenirLTStd-Roman.otf') format('opentype');
+}
 
-  body,header,div,h1,h2{
-    font-family: 'AvenirLight';
-  }
+body {
+font-family: 'AvenirLight';
+}

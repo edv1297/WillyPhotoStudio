@@ -27,12 +27,12 @@ export class Main extends React.Component {
   render(){
     return(
       <div>
-      <div id = "img">
-        <img src = "assets/farmImage.jpg" width = {this.state.width}/>
-        <h1 id = "Title" className = "MainText">Uniting the local food community</h1>
-        <h2 id = "Pun" className = "MainText">One byte at a time.</h2>
-        <Bio/>
-    </div>
-  </div>
+          <div id="main-image">
+              <img src="assets/farmImage.jpg" width={this.state.width}/>
+              <div id="page-title-text" className="main-title">Uniting the local food community</div>
+              <div id="page-sub-title" className="main-title">One<span style={{color: '#DE1500'}}> byte</span> at a time.</div>
+          </div>
+          <Bio/>
+      </div>
     )}
   }

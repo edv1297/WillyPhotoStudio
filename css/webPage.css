@@ -1,23 +1,21 @@
-#img {
-  width:100vw;
+#main-image{
+    width: 100vw;
+    height: auto;
 }
-h1#Title{
 
+.main-title{
+    color: white;
+    position: absolute;
+    width: 100vw;
+    text-align: center;
 }
-.MainText{
-  position:absolute;
-  top:25%;
-  text-align: center;
-   left: 0;
-  width: 100vw;
-  color: white;
-  font-size:3.5vw;
-}
-h2#Pun{
 
-  top:38%;
-  font-size: 2vw
+#page-title-text{
+    top: calc(calc(100vw * 555) / 1281 / 2.5);
+    font-size: 3.8vw;
 }
-p{
-  width: 80vw;
+
+#page-sub-title{
+    top: calc(calc(100vw * 555) / 1281 / 1.85);
+    font-size: 2.6vw;
 }
