@@ -1,0 +1,150 @@
+:root{
+  --navbar-open-height: 150px;
+  --navbar-closed-height: 50px;
+  --navbar-tab-height: 40px;
+}
+
+div.navigator{
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+} 
+
+div.navigator-full{
+  background-color: transparent;
+  height: var(--navbar-open-height);
+  color: white;
+}
+
+div.navigator-small{
+  background-color: white;
+  height: var(--navbar-closed-height);
+  color: black;
+}
+
+div.navbar-collapse-anim{
+  animation: collapse 0.5s 1;
+}
+
+div.navbar-open-anim{
+  animation: open 0.5s 1;
+}
+
+@keyframes collapse{
+    0% {
+      background-color: transparent;
+      height: var(--navbar-open-height);
+      color: white;
+    }
+    100% {
+      background-color: white;
+      height: var(--navbar-closed-height);
+      opacity: 1;
+      color: black;
+    }
+}
+
+@keyframes open{
+  0%{
+    background-color: white;
+    height: var(--navbar-closed-height);
+    opacity: 1;
+    color: black;
+  }
+  100%{
+    background-color: transparent;
+    height: var(--navbar-open-height);
+    opacity: 0.7;
+    color: white;
+  }
+}
+
+div#logo-main{
+  position: absolute;
+}
+
+  div.logo-centered-larger{
+    height: 7vw;
+    width: 21vw;
+    left: calc(50vw - 10.5vw);
+    top: calc(50% - 3.5vw);
+  }
+
+  div.logo-centered-shrunken{
+    left: calc(50vw - 75px);
+  }
+
+  div.logo-left{
+    left: 3vw;
+  }
+
+  div.logo-left-larger{
+    height: 10.5vw;
+    width: 32vw;
+    top: calc(50% - 5.25vw);
+  }
+
+  div.logo-shrunken{
+    height: 50px;
+    width: 150px;
+    top: calc(50% - 25px);
+  }
+
+div.navbar-tab-holder{
+  height: 30px;
+  width: calc(100vw / 4);
+  position: absolute;
+  top: calc(50% - var(--navbar-tab-height) / 2) !important;
+  font-size: 17px;
+}
+
+  div#navbar-tab-holder-left{
+    left: 13vw;
+  }
+
+  div#navbar-tab-holder-right{
+    right: 13vw;
+  }
+
+div.navbar-tab{
+  height: var(--navbar-tab-height) !important;
+  width: 2;
+  position: relative;
+  float: left;
+  line-height: var(--navbar-tab-height);
+  text-align: center;
+}
+
+    div.navbar-tab-left{
+      width: calc(100% / 3);
+      height: auto;
+    }
+
+    div.navbar-tab-right{
+      width: calc(100% / 4);
+      height: auto;
+    }
+
+    div.navbar-tab-big{
+      line-height: 20px;
+    }
+
+div#navigator-dropdown-toggle{
+  height: 50px;
+  width: 50px;
+  background-color: chartreuse;
+  position: absolute;
+  top: calc(50% - 25px);
+  right: 8vw;
+}
+
+div#landing-img-main{
+  height: calc(0.66666 * 100vw);
+  width: 100vw;
+  background-color: lightblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('farm.jpg');
+}
