@@ -1,26 +1,23 @@
-
 #img {
   width:100vw;
-  height:auto;
 }
 h1#Title{
-  margin-top:15%;
+
 }
 .MainText{
-  z-index: 100;
-  position: relative;
-  height: auto;
-  width: 100vw;
+  position:absolute;
+  top:25%;
   text-align: center;
+   left: 0;
+  width: 100vw;
   color: white;
   font-size:3.5vw;
 }
 h2#Pun{
-  margin-top : 20%;
+
+  top:38%;
   font-size: 2vw
 }
 p{
   width: 80vw;
 }
-
-
