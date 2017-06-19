@@ -1,0 +1,79 @@
+div.navigator{
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+div.navigator-full{
+  background-color: transparent;
+  height: 100px;
+}
+
+div.navigator-small{
+  background-color: white;
+  height: 50px;
+}
+
+div.navbar-collapse{
+  animation: collapse 0.5s 1;
+}
+
+div.navbar-open{
+  animation: open 0.5s 1;
+}
+
+@keyframes collapse{
+    0% {
+      background-color: transparent;
+      height: 100px;
+    }
+    100% {
+      background-color: white;
+      height: 50px;
+      opacity: 1;
+    }
+}
+
+@keyframes open{
+  0%{
+    background-color: white;
+    height: 50px;
+    opacity: 1;
+  }
+  100%{
+    background-color: transparent;
+    height: 100px;
+    opacity: 0.7;
+  }
+}
+
+div#logo-main{
+  height: 30px;
+  width: 150px;
+  /*background-color: red;*/
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(100vw / 2 - 75px);
+}
+
+div.navbar-tab{
+  height: 30px;
+  width: 100px;
+  background-color: blue;
+  position: absolute;
+  top: calc(50% - 15px);
+  color: white;
+  line-height: 30px;
+  text-align: center;
+}
+
+div#landing-img-main{
+  height: calc(0.66666 * 100vw);
+  width: 100vw;
+  background-color: lightblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('assets/farm.jpg');
+}
