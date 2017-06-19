@@ -51,7 +51,7 @@ export default class NavLogo extends React.Component{
 				logoHeight = window.innerWidth * 0.07;
 			}else{
 				classes = ["logo-left", "logo-left-larger"];
-				logoHeight = window.innerWidth * 0.105;
+				logoHeight = window.innerWidth * 0.06;
 			}
 		}else{
 			if(this.state.type == "center"){
@@ -72,9 +72,11 @@ export default class NavLogo extends React.Component{
 	render(){
 		var classes = "";
 
+		const imageColor = this.state.collapsed ? "black" : "white";
+
 		return (
 			<div id="logo-main" className={this.state.classes.join(" ")}>
-				<img src="assets/logoblack.png" height={this.state.logoHeight + "px"}/>
+				<img src={"assets/logo" + imageColor + ".png"} height={this.state.logoHeight + "px"}/>
 			</div>
 		);
 	}

@@ -28,7 +28,7 @@ div.navbar-collapse-anim{
 }
 
 div.navbar-open-anim{
-  animation: open 0.5s 1;
+  animation: expand 0.5s 1;
 }
 
 @keyframes collapse{
@@ -45,7 +45,7 @@ div.navbar-open-anim{
     }
 }
 
-@keyframes open{
+@keyframes expand{
   0%{
     background-color: white;
     height: var(--navbar-closed-height);
@@ -80,9 +80,9 @@ div#logo-main{
   }
 
   div.logo-left-larger{
-    height: 10.5vw;
-    width: 32vw;
-    top: calc(50% - 5.25vw);
+    height: 6vw;
+    width: 18vw;
+    top: calc(50% - 3vw);
   }
 
   div.logo-shrunken{
@@ -96,7 +96,7 @@ div.navbar-tab-holder{
   width: calc(100vw / 4);
   position: absolute;
   top: calc(50% - var(--navbar-tab-height) / 2) !important;
-  font-size: 17px;
+  font-size: 16px;
 }
 
   div#navbar-tab-holder-left{
@@ -133,7 +133,6 @@ div.navbar-tab{
 div#navigator-dropdown-toggle{
   height: 50px;
   width: 50px;
-  background-color: chartreuse;
   position: absolute;
   top: calc(50% - 25px);
   right: 8vw;

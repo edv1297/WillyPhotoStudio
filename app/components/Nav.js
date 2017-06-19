@@ -11,7 +11,8 @@ export class Nav extends React.Component{
 		this.state = {
 			collapsed: false,
 			classes: ["navigator", "navigator-full"],
-			minimized: window.innerWidth <= this.windowLim
+			minimized: window.innerWidth <= this.windowLim,
+			popoutNavi: false
 		};
 
 	}
@@ -52,17 +53,36 @@ export class Nav extends React.Component{
 		this.state.collapsed = !this.state.collapsed;
 	}
 
-	clicked(){
-
+	togglePopOutNavigator(){
+		this.setState({
+			popoutNavi: !this.state.popoutNavi
+		});
 	}
 
 	render(){
 
 		if(this.state.minimized){
+
+			var tabToggleImage = "";
+
+			if(this.state.collapsed){
+				if(!this.state.popoutNavi)
+					tabToggleImage = "show-tabs-button-black";
+				else
+					tabToggleImage = "hide-tabs-button-black";
+			}else{
+				if(!this.state.popoutNavi)
+					tabToggleImage = "show-tabs-button-white";
+				else
+					tabToggleImage = "hide-tabs-button-white";
+			}
+
 			return(
 				<div className={this.state.classes.join(" ")} role="navigation">
 					<NavLogo ref={(child) => {this.logo = child}} initialState={this.state.collapsed} type="left"/>
-					<div id="navigator-dropdown-toggle"></div>
+					<div id="navigator-dropdown-toggle">
+						<img src={"assets/" + tabToggleImage + ".png"} height="50" width="50"/>
+					</div>
 				</div>
 			);
 		}else{
