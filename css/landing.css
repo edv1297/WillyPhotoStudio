@@ -1,0 +1,107 @@
+#main-image{
+    width: 100vw;
+    height: auto;
+}
+
+.header-title{
+    color: white;
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+}
+
+#footer{
+    background-color: red;
+    height: 100px;
+    width: 100vw;
+    float: left;
+}
+
+#page-title-text{
+    top: calc(calc(100vw * 555) / 1281 / 2.5);
+    font-size: 3.8vw;
+}
+
+#page-sub-title{
+    top: calc(calc(100vw * 555) / 1281 / 1.85);
+    font-size: 2.6vw;
+}
+
+#bio{
+    height: 500px;
+}
+
+#bio-header{
+    font-size: 50px;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 80px;
+    color: white;
+}
+
+#bio-body{
+    background-color: red;
+    height: 250px;
+    width: 600px;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 80px;
+}
+
+#bio-picture{
+    background-color: blue;
+    height: 400px;
+    width: 400px;
+    position: relative;
+    float: right;
+    margin-right: 80px;
+    margin-top: 50px;
+}
+
+.customer-type-button{
+    background-color: white;
+    height: 33.3vw;
+    width: 33.3vw;
+    position: relative;
+    float: left;
+}
+
+.blurb-box{
+    width: 100vw;
+    min-height: 200px;
+    float: left;
+    background-color: #232428;
+}
+
+.horizontal-spacer{
+    width: 100vw;
+    background-color: #232428;
+    float: left;
+    height: 50px;
+}
+
+.main-link-button{
+    width: 25vw;
+    height: 25vw;
+    background-color: orange;
+    color: white;
+    line-height: 25vw;
+    text-align: center;
+    font-size: 40px;
+    float: left;
+}
+
+input#email-input{
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    margin-top: 140px;
+    margin-left: calc(50vw - 150px);
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    color: white;
+    border-bottom: solid;
+    border-bottom-width: 2px;
+    font-size: 20px;
+}

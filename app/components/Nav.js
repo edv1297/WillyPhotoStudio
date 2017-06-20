@@ -1,4 +1,5 @@
 import React from 'react';
+
 import NavLogo from './NavLogo';
 
 export class Nav extends React.Component{
@@ -18,14 +19,14 @@ export class Nav extends React.Component{
 	}
 
 	componentDidMount(){
-		window.addEventListener('scroll', this.handleScroll.bind(this));
-		window.addEventListener('resize', this.handleResize.bind(this));
-	}
+      window.addEventListener('resize', this.handleResize.bind(this));
+      window.addEventListener('scroll', this.handleScroll.bind(this));
+    }
 
-	componentWillUnmount() {
-    	window.removeEventListener('scroll', this.handleScroll.bind(this));
-    	window.removeEventListener('resize', this.handleResize.bind(this));
-  	}
+    componentWillUnmount(){
+      window.removeEventListener("resize", this.handleResize.bind(this));
+      window.addEventListener('scroll', this.handleScroll.bind(this));
+    }
 
   	handleResize(){
   		if(window.innerWidth <= this.windowLim && !this.state.minimized){
@@ -37,6 +38,8 @@ export class Nav extends React.Component{
   				minimized: false
   			});
   		}
+
+  		this.logo.handleResize();
   	}
 
 	handleScroll(){
@@ -91,16 +94,16 @@ export class Nav extends React.Component{
 			return(
 				<div className={this.state.classes.join(" ")} role="navigation">
 					<div className={tabHolderClass.join(" ")} id="navbar-tab-holder-left">
-						<div className="navbar-tab navbar-tab-left navbar-tab-big">Producer<br/>Farms</div>
-						<div className="navbar-tab navbar-tab-left navbar-tab-big">Distributors<br/>Food hubs</div>
-						<div className="navbar-tab navbar-tab-left">Buyers</div>
+						<div className="navbar-tab navbar-tab-left navbar-tab-big"><a href="/">Producer<br/>Farms</a></div>
+						<div className="navbar-tab navbar-tab-left navbar-tab-big"><a href="/">Distributors<br/>Food hubs</a></div>
+						<div className="navbar-tab navbar-tab-left"><a href="/">Buyers</a></div>
 					</div>
 					<NavLogo ref={(child) => {this.logo = child}} initialState={this.state.collapsed} type="center"/>
 					<div className={tabHolderClass.join(" ")} id="navbar-tab-holder-right">
-						<div className="navbar-tab navbar-tab-right">About Us</div>
-						<div className="navbar-tab navbar-tab-right">Contact</div>
-						<div className="navbar-tab navbar-tab-right">News</div>
-						<div className="navbar-tab navbar-tab-right">Login</div>
+						<div className="navbar-tab navbar-tab-right"><a href="/">About Us</a></div>
+						<div className="navbar-tab navbar-tab-right"><a href="/contact">Contact</a></div>
+						<div className="navbar-tab navbar-tab-right"><a href="/">News</a></div>
+						<div className="navbar-tab navbar-tab-right"><a href="/">Login</a></div>
 					</div>
 				</div>
 			);

@@ -13,12 +13,14 @@ export default class NavLogo extends React.Component{
 		};
 
 		this.updateClasses(this.state.collapsed);
+		this.updateLogoSize(this.state.collapsed);
 	}
 
 	collapse(){
 		if(this.state.collapsed) return;
 
 		this.updateClasses(true);
+		this.updateLogoSize(true);
 
 		this.setState({
 			collapsed: true
@@ -29,29 +31,48 @@ export default class NavLogo extends React.Component{
 		if(!this.state.collapsed) return;
 
 		this.updateClasses(false);
+		this.updateLogoSize(false);
 
 		this.setState({
 			collapsed: false
 		});
 	}
 
-	compnentDidMount(){
+	componentDidMount(){
 		this.setState({
 			classes: this.state.classes
 		});
 	}
 
-	updateClasses(collapsed){
-		var classes = "";
+	handleResize(){
+		this.updateLogoSize(this.state.collapsed);
+		this.setState({});
+	}
+
+	updateLogoSize(collapsed){
 		var logoHeight = 0;
 
 		if(!collapsed){
 			if(this.state.type == "center"){
-				classes = ["logo-centered-larger"];
 				logoHeight = window.innerWidth * 0.07;
 			}else{
-				classes = ["logo-left", "logo-left-larger"];
 				logoHeight = window.innerWidth * 0.06;
+			}
+		}else{
+			logoHeight = 50;
+		}
+
+		this.state.logoHeight = logoHeight;
+	}
+
+	updateClasses(collapsed){
+		var classes = "";
+
+		if(!collapsed){
+			if(this.state.type == "center"){
+				classes = ["logo-centered-larger"];
+			}else{
+				classes = ["logo-left", "logo-left-larger"];
 			}
 		}else{
 			if(this.state.type == "center"){
@@ -60,11 +81,7 @@ export default class NavLogo extends React.Component{
 				classes = ["logo-left", "logo-shrunken"];
 			}
 
-			logoHeight = 50;
-
 		}
-
-		this.state.logoHeight = logoHeight;
 
 		this.state.classes = classes;
 	}
