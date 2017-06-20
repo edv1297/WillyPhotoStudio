@@ -1,10 +1,27 @@
 import React from 'react';
 
+import { Nav } from "./Nav";
+import {Footer} from './Footer';
+
 export class Landing extends React.Component{
-    render(){
+    constructor(props){
+      super();
+      window.document.body.style.backgroundColor = "#232428";
+    }
+
+    componentDidMount(){
+      window.addEventListener('resize', (() => {this.setState({})}).bind(this));
+    }
+
+    componentWillUnmount(){
+      window.removeEventListener("resize", (() => {this.setState({})}).bind(this));
+    }
+
+    render(){      
       return(
         <div>
-            <div id="main-image">
+            <Nav collapsable={true}/>
+            <div id="main-image" className="drop-shadow">
                 <img src="assets/farmImage.jpg" width={window.innerWidth}/>
                 <div id="page-title-text" className="header-title">Uniting the local food community</div>
                 <div id="page-sub-title" className="header-title">One<span style={{color: '#DE1500'}}> byte</span> at a time.</div>
@@ -45,12 +62,6 @@ export const NewsletterSignup = (props) => {
             </div>
             <input id="email-input" placeholder="yourname@mail.com"/>
         </div>
-    );
-}
-
-export const Footer = (props) => {
-    return(
-        <div id="footer"></div>
     );
 }
 

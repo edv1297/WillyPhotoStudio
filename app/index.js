@@ -3,19 +3,16 @@ import React from 'react';
 import { render } from 'react-dom';
 import {BrowserRouter as Router, Route} from "react-router-dom";
 
-import { Nav } from "./components/Nav";
-
 import { Landing } from "./components/Landing";
 import { Contact } from "./components/Contact";
 
 export const App = (props) => {
 	return(
 		<div>
-			<Nav/>
 			<Router>
 				<div>
-					<Route path="/contact" component={Contact}/>
-					<Route path="/" component={Landing}/>
+					<Route exact path="/" component={ Landing }/>
+					<Route path="/contact" component={ Contact }/>
 				</div>
 			</Router>
 		</div>

@@ -9,12 +9,19 @@ export class Nav extends React.Component{
 
 		this.windowLim = 1070;
 
+		this.triggerScrollTop = 60;
+
+		this.collapsable = this.props.collapsable;
+
 		this.state = {
-			collapsed: false,
+			collapsed: !this.collapsable,
 			classes: ["navigator", "navigator-full"],
 			minimized: window.innerWidth <= this.windowLim,
 			popoutNavi: false
 		};
+
+		if(!this.collapsable)
+			this.state.classes = ["navigator", "navigator-small", "drop-shadow"];
 
 	}
 
@@ -43,11 +50,13 @@ export class Nav extends React.Component{
   	}
 
 	handleScroll(){
-		if(!this.state.collapsed && window.scrollY >= 100){
+		if(!this.collapsable) return;
+
+		if(!this.state.collapsed && window.scrollY >= this.triggerScrollTop){
 			// window.document.getElementById("logo-main-img").src = "logoblack.png";
-			startAnimation(this, "navbar-collapse-anim", ["navigator", "navigator-small"], 500);
+			startAnimation(this, "navbar-collapse-anim", ["navigator", "navigator-small", "drop-shadow"], 500);
 			this.logo.collapse();
-		}else if(this.state.collapsed && window.scrollY < 100){
+		}else if(this.state.collapsed && window.scrollY < this.triggerScrollTop){
 			// window.document.getElementById("logo-main-img").src = "logowhite.png";
 			startAnimation(this, "navbar-open-anim", ["navigator", "navigator-full"], 500);
 			this.logo.expand();

@@ -1,3 +1,7 @@
+:root{
+	 --white: #f7f7f7;
+}
+
 @font-face {
 	font-family: 'AvenirLight';
 	src: url('AvenirLTStd-Light.otf') format('opentype');
@@ -9,5 +13,58 @@
 }
 
 body {
-font-family: 'AvenirLight';
+	font-family: 'AvenirLight';
+}
+
+.page{
+	background-color: #232428;
+	width: 100vw;
+}
+
+.header-title{
+    color: white;
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+}
+
+.navbar-replace{
+	height: 100px;
+	width: 100vw;
+	float: left;
+	position: relative;
+}
+
+.drop-shadow{
+	box-shadow: 0px 3px 20px rgba(0,0,0,0.5);
+}
+
+.blurb-box{
+    width: 100vw;
+    min-height: 200px;
+    float: left;
+    background-color: #232428;
+}
+
+.horizontal-spacer{
+    width: 100vw;
+    float: left;
+    height: 50px;
+}
+
+
+textarea, input {
+	border: none;
+	color: var(--white);
+	border-bottom: solid;
+	border-bottom-width: 2px;
+	border-radius: 2px;
+	text-align: center;
+	background-color: #7A7B7E;
+	resize: none;
+}
+
+textarea:focus, input:focus{
+	outline: none;
+	border-color: #13E0F4;
 }

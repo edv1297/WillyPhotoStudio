@@ -3,13 +3,6 @@
     height: auto;
 }
 
-.header-title{
-    color: white;
-    position: absolute;
-    width: 100vw;
-    text-align: center;
-}
-
 #footer{
     background-color: red;
     height: 100px;
@@ -66,20 +59,6 @@
     float: left;
 }
 
-.blurb-box{
-    width: 100vw;
-    min-height: 200px;
-    float: left;
-    background-color: #232428;
-}
-
-.horizontal-spacer{
-    width: 100vw;
-    background-color: #232428;
-    float: left;
-    height: 50px;
-}
-
 .main-link-button{
     width: 25vw;
     height: 25vw;
@@ -97,11 +76,6 @@ input#email-input{
     height: 40px;
     margin-top: 140px;
     margin-left: calc(50vw - 150px);
-    text-align: center;
-    border: none;
     background-color: transparent;
-    color: white;
-    border-bottom: solid;
-    border-bottom-width: 2px;
     font-size: 20px;
 }
