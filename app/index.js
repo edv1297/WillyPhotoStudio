@@ -6,6 +6,10 @@ import {BrowserRouter as Router, Route} from "react-router-dom";
 import { Landing } from "./components/Landing";
 import { Contact } from "./components/Contact";
 import { AboutUs } from "./components/AboutUs";
+import { Producer } from "./components/LearnMore";
+import { Distributor } from "./components/LearnMore";
+import { Buyer } from "./components/LearnMore";
+
 
 export const App = (props) => {
 	return(
@@ -15,6 +19,9 @@ export const App = (props) => {
 					<Route exact path="/" component={ Landing }/>
 					<Route exact path="/contact" component={ Contact }/>
 					<Route exact path="/aboutus" component={ AboutUs }/>
+					<Route exact path="/producer" component={ Producer }/>
+					<Route exact path="/distributor" component={ Distributor }/>
+					<Route exact path="/buyer" component={ Buyer }/>
 				</div>
 			</Router>
 		</div>

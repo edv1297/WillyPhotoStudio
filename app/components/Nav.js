@@ -97,9 +97,9 @@ export class Nav extends React.Component{
 	  					</div>
 	  					<div id="popout-navigator" style={{display: this.state.popoutNavi ? "block" : "none"}}>
 	  						<div className="popnavi-links">
-		  						<div className="popnavi-link"><a href="/">Producers/Farms</a></div>
-		  						<div className="popnavi-link"><a href="/">Distributors/Food hubs</a></div>
-		  						<div className="popnavi-link"><a href="/">Buyers</a></div>
+		  						<div className="popnavi-link"><a href="/producer">Producers/Farms</a></div>
+		  						<div className="popnavi-link"><a href="/distributor">Distributors/Food hubs</a></div>
+		  						<div className="popnavi-link"><a href="/buyer">Buyers</a></div>
 		  						<br/><br/>
 		  						<div className="popnavi-link"><a href="/aboutus">About</a></div>
 		  						<div className="popnavi-link"><a href="/contact">Contact</a></div>
@@ -115,9 +115,9 @@ export class Nav extends React.Component{
   			return(
   				<div className={this.state.classes.join(" ")} role="navigation">
 	  				<div className={tabHolderClass.join(" ")} id="navbar-tab-holder-left">
-		  				<div className="navbar-tab navbar-tab-left navbar-tab-big"><a href="/">Producers<br/>Farms</a></div>
-		  				<div className="navbar-tab navbar-tab-left navbar-tab-big"><a href="/">Distributors<br/>Food hubs</a></div>
-		  				<div className="navbar-tab navbar-tab-left"><a href="/">Buyers</a></div>
+		  				<div className="navbar-tab navbar-tab-left navbar-tab-big"><a href="/producer">Producers/<br/>Farms</a></div>
+		  				<div className="navbar-tab navbar-tab-left navbar-tab-big"><a href="/distributor">Distributors/<br/>Food hubs</a></div>
+		  				<div className="navbar-tab navbar-tab-left"><a href="/buyer">Buyers</a></div>
 	  				</div>
 	  				<NavLogo ref={(child) => {this.logo = child}} initialState={this.state.collapsed} type="center"/>
 	  				<div className={tabHolderClass.join(" ")} id="navbar-tab-holder-right">
