@@ -16,7 +16,7 @@
     
   `--save`  
     
-  "author": "Michael",  
+  "author": "Doge",  
   "license": "ISC",  
   "dependencies": {  
     "react": "^15.6.1",  
