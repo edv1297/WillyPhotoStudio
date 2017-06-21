@@ -98,11 +98,11 @@ div.logo-shrunken{
 }
 
 div.navbar-tab-holder{
-    height: 30px;
-    width: calc(100vw / 4);
-    position: absolute;
-    top: calc(50% - var(--navbar-tab-height) / 2) !important;
-    font-size: 16px;
+  height: 30px;
+  width: calc(100vw / 4);
+  position: absolute;
+  top: calc(50% - var(--navbar-tab-height) / 2) !important;
+  font-size: 1.25vw;
 }
 
 div#navbar-tab-holder-left{
@@ -132,9 +132,15 @@ div.navbar-tab-right{
     height: auto;
 }
 
-div.navbar-tab-big{
+    div.navbar-tab-big{
+      line-height: 1vw;
+      font-size: 1vw;
+    }
+
+/* div.navbar-tab-big{
     line-height: 20px;
-}
+} */
+
 
 div#navigator-dropdown-toggle{
     height: 50px;
