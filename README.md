@@ -3,7 +3,7 @@
 ## Dependencies
 `npm install`
 
-{  
+{
   "name": "reacttest",  
   "version": "1.0.0",  
   "description": "React JS test",  
