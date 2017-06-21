@@ -1,0 +1,121 @@
+#aboutus-image{
+	height: 300px;
+	width: 300px;
+	background-color: blue;
+	position: absolute;
+	margin-top: 40px;
+	right: 11vw;
+}
+
+#aboutus-profiles{
+	width: 100vw;
+	height: auto;
+	float: left;
+}
+
+.person-profile{
+	width: 25vw;
+	float: left;
+	min-width: 200px;
+	margin-top: 50px;
+}
+
+img.profile-pic{
+	width: 80%;
+	margin-left: 10%;
+}
+
+.profile-name{
+	float: left;
+	margin-top: 20px;
+	color: white;
+	width: 100%;
+	font-size: 30px;
+	text-align: center;
+}
+
+.profile-title{
+	font-size: 20px;
+	margin-top: 0px;
+}
+
+@media only screen and (min-width : 770px){    
+    .person-profile{
+		width: 25vw;
+		float: left;
+		min-width: 200px;
+		margin-bottom: 20px;
+	}
+
+	#aboutus-text{
+		height: auto;
+		width: calc(100px + 40vw);
+		color: white;
+		position: relative;
+		float: left;
+		margin-left: 60px;
+		text-align: justify;
+	    text-justify: inter-word;
+	}
+
+	#aboutus-title{
+		width: 60vw;
+		font-size: calc(20px + 3vw);
+		text-align: left !important;
+		padding-left: 60px;
+		position: relative;
+		float: left;
+		color: white;
+	}
+
+	.profile-description{
+		width: 90%;
+		margin-left: 5%;
+		float: left;
+		color: white;
+		margin-top: 20px;
+		/*text-align: justify;
+	    text-justify: inter-word;*/
+	}
+
+}
+
+@media only screen and (max-width : 770px){    
+    .person-profile{
+		width: 100vw;
+		float: left;
+		min-width: 200px;
+		margin-bottom: 20px;
+	}
+
+	#aboutus-text{
+		height: auto;
+		width: 80vw;
+		color: white;
+		position: relative;
+		float: left;
+		margin-left: 10vw;
+		text-align: justify;
+	    text-justify: inter-word;
+	}
+
+	#aboutus-title{
+		width: 100vw;
+		font-size: calc(20px + 3vw);
+		text-align: center;
+		position: relative;
+		float: left;
+		color: white;
+		margin-bottom: 20px;
+	}
+
+	.profile-description{
+		width: 80vw;
+		margin-left: 10vw;
+		float: left;
+		color: white;
+		margin-top: 20px;
+		/*text-align: justify;
+	    text-justify: inter-word;*/
+	}
+}
