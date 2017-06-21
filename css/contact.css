@@ -1,9 +1,3 @@
-#contactus-page-title{
-	font-size: calc(30px + 2vw);
-	position: relative;
-	float: left;
-}
-
 #contactus-page-subtitle{
 	font-size: calc(10px + 2vw);
 	position: relative;
@@ -59,9 +53,41 @@ textarea.contact-textarea{
 
 #contact-submit{
 	position: relative;
-	float: left;
-	margin-left: auto;
-	margin-right: auto;
+	text-align: center;
 	margin-top: 30px;
 }
 
+@media only screen and (min-width : 770px){
+    .info-input-container{
+		max-width: 420px;
+		width: 90vw;
+		background-color: blue;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 20px;
+	}
+
+	#contactus-page-title{
+		font-size: calc(30px + 2vw);
+		position: relative;
+		float: left;
+	}
+
+}
+
+@media only screen and (max-width : 770px){
+    .info-input-container{
+		width: 80vw ;
+		background-color: blue;
+		margin-left: 10vw;
+		margin-top: 20px;
+	}
+
+	#contactus-page-title{
+		font-size: 30px;
+		position: relative;
+		float: left;
+		line-height: 32px;
+		margin-bottom: 20px;
+	}
+}

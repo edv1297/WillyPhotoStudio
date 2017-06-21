@@ -9,7 +9,7 @@ export default class NavLogo extends React.Component{
 			collapsed: this.props.initialState,
 			type: this.props.type,
 			classes: [],
-			logoHeight: 10
+			logoHeight: 50
 		};
 
 		this.updateClasses(this.state.collapsed);
@@ -52,12 +52,8 @@ export default class NavLogo extends React.Component{
 	updateLogoSize(collapsed){
 		var logoHeight = 0;
 
-		if(!collapsed){
-			if(this.state.type == "center"){
-				logoHeight = window.innerWidth * 0.07;
-			}else{
-				logoHeight = window.innerWidth * 0.06;
-			}
+		if(!collapsed && this.state.type == "center"){
+			logoHeight = window.innerWidth * 0.07;
 		}else{
 			logoHeight = 50;
 		}

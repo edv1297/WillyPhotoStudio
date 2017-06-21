@@ -2,6 +2,26 @@
 	 --white: #f7f7f7;
 }
 
+.footer-text{
+	color:#f7f7f7;
+	float: left;
+	width: 33.3vw;
+	height: 50px;
+	line-height: 50px;
+	font-size: .9vw;
+	font-family: 'Avenir-Light';
+	text-align: center;
+}
+
+#footer{
+    background-color: #212942;
+    max-height: 50px;
+    height: 10vw;
+    width: 100vw;
+	position: fixed;
+ 	bottom: 0;
+}
+
 @font-face {
 	font-family: 'AvenirLight';
 	src: url('AvenirLTStd-Light.otf') format('opentype');
@@ -52,7 +72,6 @@ body {
     float: left;
     height: 50px;
 }
-
 
 textarea, input {
 	border: none;
