@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Route} from "react-router-dom";
 
 import { Landing } from "./components/Landing";
 import { Contact } from "./components/Contact";
+import { AboutUs } from "./components/AboutUs";
 
 export const App = (props) => {
 	return(
@@ -12,7 +13,8 @@ export const App = (props) => {
 			<Router>
 				<div>
 					<Route exact path="/" component={ Landing }/>
-					<Route path="/contact" component={ Contact }/>
+					<Route exact path="/contact" component={ Contact }/>
+					<Route exact path="/aboutus" component={ AboutUs }/>
 				</div>
 			</Router>
 		</div>

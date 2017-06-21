@@ -36,6 +36,10 @@ input.contact-input{
 	font-size: 18px;
 	background-color: var(--white);
 	color: black;
+
+	border-bottom: none;
+	border-left: solid;
+	border-width: 4px;
 }
 
 textarea.contact-textarea{
@@ -47,19 +51,17 @@ textarea.contact-textarea{
 	font-size: 18px;
 	background-color: var(--white);
 	color: black;
+
+	border-bottom: none;
+	border-left: solid;
+	border-width: 4px;
 }
 
 #contact-submit{
-	width: 200px;
-	height: 60px;
+	position: relative;
+	float: left;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: orange;
 	margin-top: 30px;
-	text-align: center;
-	line-height: 60px;
-	background-color: white;
-	color: #232428;
-	border-radius: 2px;
 }
 

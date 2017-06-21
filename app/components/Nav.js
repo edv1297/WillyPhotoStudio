@@ -15,24 +15,25 @@ export class Nav extends React.Component{
 
 		this.state = {
 			collapsed: !this.collapsable,
-			classes: ["navigator", "navigator-full"],
+			classes: !this.collapsable ? ["navigator", "navigator-small", "drop-shadow"] : ["navigator", "navigator-full"],
 			minimized: window.innerWidth <= this.windowLim,
 			popoutNavi: false
 		};
-
-		if(!this.collapsable)
-			this.state.classes = ["navigator", "navigator-small", "drop-shadow"];
 
 	}
 
 	componentDidMount(){
       window.addEventListener('resize', this.handleResize.bind(this));
-      window.addEventListener('scroll', this.handleScroll.bind(this));
+
+      if(this.collapsable) // only listen for scrolling events if this navbar is collapsable
+      		window.addEventListener('scroll', this.handleScroll.bind(this));
     }
 
     componentWillUnmount(){
       window.removeEventListener("resize", this.handleResize.bind(this));
-      window.addEventListener('scroll', this.handleScroll.bind(this));
+
+      if(this.collapsable)
+      		window.removeEventListener('scroll', this.handleScroll.bind(this));
     }
 
   	handleResize(){
@@ -50,14 +51,10 @@ export class Nav extends React.Component{
   	}
 
 	handleScroll(){
-		if(!this.collapsable) return;
-
 		if(!this.state.collapsed && window.scrollY >= this.triggerScrollTop){
-			// window.document.getElementById("logo-main-img").src = "logoblack.png";
 			startAnimation(this, "navbar-collapse-anim", ["navigator", "navigator-small", "drop-shadow"], 500);
 			this.logo.collapse();
 		}else if(this.state.collapsed && window.scrollY < this.triggerScrollTop){
-			// window.document.getElementById("logo-main-img").src = "logowhite.png";
 			startAnimation(this, "navbar-open-anim", ["navigator", "navigator-full"], 500);
 			this.logo.expand();
 		}else return;
@@ -72,7 +69,6 @@ export class Nav extends React.Component{
 	}
 
 	render(){
-
 		if(this.state.minimized){
 
 			var tabToggleImage = "";
@@ -109,7 +105,7 @@ export class Nav extends React.Component{
 					</div>
 					<NavLogo ref={(child) => {this.logo = child}} initialState={this.state.collapsed} type="center"/>
 					<div className={tabHolderClass.join(" ")} id="navbar-tab-holder-right">
-						<div className="navbar-tab navbar-tab-right"><a href="/">About Us</a></div>
+						<div className="navbar-tab navbar-tab-right"><a href="/aboutus">About Us</a></div>
 						<div className="navbar-tab navbar-tab-right"><a href="/contact">Contact</a></div>
 						<div className="navbar-tab navbar-tab-right"><a href="/">News</a></div>
 						<div className="navbar-tab navbar-tab-right"><a href="/">Login</a></div>
