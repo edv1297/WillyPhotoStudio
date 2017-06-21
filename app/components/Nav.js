@@ -23,18 +23,18 @@ export class Nav extends React.Component{
 	}
 
 	componentDidMount(){
-      window.addEventListener('resize', this.handleResize.bind(this));
+		window.addEventListener('resize', this.handleResize.bind(this));
 
-      if(this.collapsable) // only listen for scrolling events if this navbar is collapsable
-      		window.addEventListener('scroll', this.handleScroll.bind(this));
-    }
+  		if(this.collapsable) // only listen for scrolling events if this navbar is collapsable
+  			window.addEventListener('scroll', this.handleScroll.bind(this));
+  	}
 
-    componentWillUnmount(){
-      window.removeEventListener("resize", this.handleResize.bind(this));
+  	componentWillUnmount(){
+  		window.removeEventListener("resize", this.handleResize.bind(this));
 
-      if(this.collapsable)
-      		window.removeEventListener('scroll', this.handleScroll.bind(this));
-    }
+  		if(this.collapsable)
+  			window.removeEventListener('scroll', this.handleScroll.bind(this));
+  	}
 
   	handleResize(){
   		if(window.innerWidth <= this.windowLim && !this.state.minimized){
@@ -48,88 +48,89 @@ export class Nav extends React.Component{
   			});
   		}
 
-  		this.logo.handleResize();
+  		if(!this.state.minimized)
+  			this.logo.handleResize();
   	}
 
-	handleScroll(){
-		if(!this.state.collapsed && window.scrollY >= this.triggerScrollTop){
-			startAnimation(this, "navbar-collapse-anim", ["navigator", "navigator-small", "drop-shadow"], 500);
-			this.logo.collapse();
-		}else if(this.state.collapsed && window.scrollY < this.triggerScrollTop){
-			startAnimation(this, "navbar-open-anim", ["navigator", "navigator-full"], 500);
-			this.logo.expand();
-		}else return;
+  	handleScroll(){
+  		if(!this.state.collapsed && window.scrollY >= this.triggerScrollTop){
+  			startAnimation(this, "navbar-collapse-anim", ["navigator", "navigator-small", "drop-shadow"], 500);
+  			this.logo.collapse();
+  		}else if(this.state.collapsed && window.scrollY < this.triggerScrollTop){
+  			startAnimation(this, "navbar-open-anim", ["navigator", "navigator-full"], 500);
+  			this.logo.expand();
+  		}else return;
 
-		this.state.collapsed = !this.state.collapsed;
-	}
+  		this.state.collapsed = !this.state.collapsed;
+  	}
 
-	togglePopOutNavigator(){
-		this.setState({
-			popoutNavi: !this.state.popoutNavi
-		});
-	}
+  	togglePopOutNavigator(){
+  		this.setState({
+  			popoutNavi: !this.state.popoutNavi
+  		});
+  	}
 
-	render(){
-		if(this.state.minimized){
+  	render(){
+  		if(this.state.minimized){
 
-			var tabToggleImage = "";
+  			var tabToggleImage = "";
 
-			if(this.state.collapsed){
-				if(!this.state.popoutNavi)
-					tabToggleImage = "show-tabs-button-black";
-				else
-					tabToggleImage = "hide-tabs-button-black";
-			}else{
-				if(!this.state.popoutNavi)
-					tabToggleImage = "show-tabs-button-white";
-				else
-					tabToggleImage = "hide-tabs-button-white";
-			}
+  			if(this.state.collapsed){
+  				if(!this.state.popoutNavi)
+  					tabToggleImage = "show-tabs-button-black";
+  				else
+  					tabToggleImage = "hide-tabs-button-black";
+  			}else{
+  				if(!this.state.popoutNavi)
+  					tabToggleImage = "show-tabs-button-white";
+  				else
+  					tabToggleImage = "hide-tabs-button-white";
+  			}
 
-			return(
-				<div>
-					<div className={this.state.classes.join(" ")} role="navigation">
-						<NavLogo ref={(child) => {this.logo = child}} initialState={this.state.collapsed} type="left"/>
-						<div id="navigator-dropdown-toggle" onClick={this.togglePopOutNavigator.bind(this)}>
-							<img src={"assets/" + tabToggleImage + ".png"} height="50" width="50"/>
-						</div>
-					</div>
-					<div id="popout-navigator" style={{display: this.state.popoutNavi ? "block" : "none"}}>
-						<div className="popnavi-links">
-							<div className="popnavi-link"><a href="/">Producers/Farms</a></div>
-							<div className="popnavi-link"><a href="/">Distributors/Food hubs</a></div>
-							<div className="popnavi-link"><a href="/">Buyers</a></div>
-							<br/><br/>
-							<div className="popnavi-link"><a href="/aboutus">About</a></div>
-							<div className="popnavi-link"><a href="/contact">Contact</a></div>
-							<div className="popnavi-link"><a href="/">News</a></div>
-							<div className="popnavi-link"><a href="/">Login</a></div>
-						</div>
-					</div>
-				</div>
-			);
-		}else{
-			var tabHolderClass = ["navbar-tab-holder"];
+  			return(
+	  				<div>
+	  					<div className={this.state.classes.join(" ")} role="navigation">
+	  						<NavLogo ref={(child) => {this.logo = child}} initialState={this.state.collapsed} type="left"/>
+	  						<div id="navigator-dropdown-toggle" onClick={this.togglePopOutNavigator.bind(this)}>
+	  							<img src={"assets/" + tabToggleImage + ".png"} height="50" width="50"/>
+	  						</div>
+	  					</div>
+	  					<div id="popout-navigator" style={{display: this.state.popoutNavi ? "block" : "none"}}>
+	  						<div className="popnavi-links">
+		  						<div className="popnavi-link"><a href="/">Producers/Farms</a></div>
+		  						<div className="popnavi-link"><a href="/">Distributors/Food hubs</a></div>
+		  						<div className="popnavi-link"><a href="/">Buyers</a></div>
+		  						<br/><br/>
+		  						<div className="popnavi-link"><a href="/aboutus">About</a></div>
+		  						<div className="popnavi-link"><a href="/contact">Contact</a></div>
+		  						<div className="popnavi-link"><a href="/">News</a></div>
+		  						<div className="popnavi-link"><a href="/">Login</a></div>
+	  						</div>
+	  					</div>
+	  				</div>
+  				);
+  		}else{
+  			var tabHolderClass = ["navbar-tab-holder"];
 
-			return(
-				<div className={this.state.classes.join(" ")} role="navigation">
-					<div className={tabHolderClass.join(" ")} id="navbar-tab-holder-left">
-						<div className="navbar-tab navbar-tab-left navbar-tab-big"><a href="/">Producers<br/>Farms</a></div>
-						<div className="navbar-tab navbar-tab-left navbar-tab-big"><a href="/">Distributors<br/>Food hubs</a></div>
-						<div className="navbar-tab navbar-tab-left"><a href="/">Buyers</a></div>
-					</div>
-					<NavLogo ref={(child) => {this.logo = child}} initialState={this.state.collapsed} type="center"/>
-					<div className={tabHolderClass.join(" ")} id="navbar-tab-holder-right">
-						<div className="navbar-tab navbar-tab-right"><a href="/aboutus">About</a></div>
-						<div className="navbar-tab navbar-tab-right"><a href="/contact">Contact</a></div>
-						<div className="navbar-tab navbar-tab-right"><a href="/">News</a></div>
-						<div className="navbar-tab navbar-tab-right"><a href="/">Login</a></div>
-					</div>
-				</div>
-			);
-		}
-	}
-}
+  			return(
+  				<div className={this.state.classes.join(" ")} role="navigation">
+	  				<div className={tabHolderClass.join(" ")} id="navbar-tab-holder-left">
+		  				<div className="navbar-tab navbar-tab-left navbar-tab-big"><a href="/">Producers<br/>Farms</a></div>
+		  				<div className="navbar-tab navbar-tab-left navbar-tab-big"><a href="/">Distributors<br/>Food hubs</a></div>
+		  				<div className="navbar-tab navbar-tab-left"><a href="/">Buyers</a></div>
+	  				</div>
+	  				<NavLogo ref={(child) => {this.logo = child}} initialState={this.state.collapsed} type="center"/>
+	  				<div className={tabHolderClass.join(" ")} id="navbar-tab-holder-right">
+		  				<div className="navbar-tab navbar-tab-right"><a href="/aboutus">About</a></div>
+		  				<div className="navbar-tab navbar-tab-right"><a href="/contact">Contact</a></div>
+		  				<div className="navbar-tab navbar-tab-right"><a href="/">News</a></div>
+		  				<div className="navbar-tab navbar-tab-right"><a href="/">Login</a></div>
+	  				</div>
+  				</div>
+  				);
+  		}
+  	}
+  }
 
 
 // <div className="navbar-tab" style={{left: 780 + 'px'}}>link</div>
@@ -148,4 +149,4 @@ function startAnimation(object, keyframes, finishedState, duration){
 	setTimeout(() => {
 		object.setState({classes: finishedState});
 	}, duration);
-}
+	}
