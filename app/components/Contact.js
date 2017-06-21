@@ -15,7 +15,7 @@ export class Contact extends React.Component{
                 <Nav collapsable={false}/>
                 <div className="navbar-replace"></div>
                 <div className="header-title" id="contactus-page-title">Have a question or comment?</div>
-                <div className="header-title" id="contactus-page-subtitle">We'd love to hear from you!</div>
+                <div className="header-title" id="contactus-page-subtitle">We would love to hear from you!</div>
                 <div id="form-container">
                     <div className="info-input-container">
                         <input placeholder="Name" className="contact-input"/>
@@ -40,5 +40,5 @@ export class Contact extends React.Component{
                 <Footer/>
             </div>
         );
-    }   
+    }
 }

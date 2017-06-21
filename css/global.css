@@ -41,7 +41,8 @@ body {
 
 .blurb-box{
     width: 100vw;
-    min-height: 200px;
+	height: 10vw;
+	min-height: 200px;
     float: left;
     background-color: #232428;
 }
