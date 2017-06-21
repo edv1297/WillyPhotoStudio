@@ -14,7 +14,8 @@
     "build:prod": "webpack -p && cp client/index.html dist/index.html"  
   },  
     
-  `--save`   
+  `--save`  
+    
   "author": "Michael",  
   "license": "ISC",  
   "dependencies": {  
@@ -25,7 +26,8 @@
     "react-router-dom": "^4.1.1"  
   },  
     
-  ` --save-dev`   
+  ` --save-dev` 
+    
   "devDependencies": {  
     "babel-core": "^6.25.0",  
     "babel-loader": "^7.0.0",  
