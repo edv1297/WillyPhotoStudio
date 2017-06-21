@@ -132,14 +132,7 @@ div.navbar-tab-right{
     height: auto;
 }
 
-    div.navbar-tab-big{
-      line-height: 1vw;
-      font-size: 1vw;
-    }
 
-/* div.navbar-tab-big{
-    line-height: 20px;
-} */
 
 
 div#navigator-dropdown-toggle{
@@ -175,6 +168,28 @@ div#popout-navigator{
         margin-top: 20px;
     }
 
+    div.navbar-tab-big{
+        line-height: 20px;
+    } 
+
+}
+
+@media only screen and (min-width : 1300px){    
+    
+    .popnavi-link{
+        width: 100%;
+        font-size: 3vw;
+        color: white;
+        position: relative;
+        float: left;
+        margin-top: 20px;
+    }
+
+    div.navbar-tab-big{
+      line-height: 1vw;
+      font-size: 1vw;
+    }
+
 }
 
 @media only screen and (max-width : 770px){    
@@ -186,4 +201,8 @@ div#popout-navigator{
         float: left;
         margin-top: 20px;
     }
+
+    div.navbar-tab-big{
+        line-height: 20px;
+    } 
 }
