@@ -43,7 +43,8 @@ export class Nav extends React.Component{
   			});
   		}else if(window.innerWidth > this.windowLim && this.state.minimized){
   			this.setState({
-  				minimized: false
+  				minimized: false,
+  				popoutNavi: false
   			});
   		}
 
@@ -86,10 +87,24 @@ export class Nav extends React.Component{
 			}
 
 			return(
-				<div className={this.state.classes.join(" ")} role="navigation">
-					<NavLogo ref={(child) => {this.logo = child}} initialState={this.state.collapsed} type="left"/>
-					<div id="navigator-dropdown-toggle">
-						<img src={"assets/" + tabToggleImage + ".png"} height="50" width="50"/>
+				<div>
+					<div className={this.state.classes.join(" ")} role="navigation">
+						<NavLogo ref={(child) => {this.logo = child}} initialState={this.state.collapsed} type="left"/>
+						<div id="navigator-dropdown-toggle" onClick={this.togglePopOutNavigator.bind(this)}>
+							<img src={"assets/" + tabToggleImage + ".png"} height="50" width="50"/>
+						</div>
+					</div>
+					<div id="popout-navigator" style={{display: this.state.popoutNavi ? "block" : "none"}}>
+						<div className="popnavi-links">
+							<div className="popnavi-link"><a href="/">Producers/Farms</a></div>
+							<div className="popnavi-link"><a href="/">Distributors/Food hubs</a></div>
+							<div className="popnavi-link"><a href="/">Buyers</a></div>
+							<br/><br/>
+							<div className="popnavi-link"><a href="/aboutus">About</a></div>
+							<div className="popnavi-link"><a href="/contact">Contact</a></div>
+							<div className="popnavi-link"><a href="/">News</a></div>
+							<div className="popnavi-link"><a href="/">Login</a></div>
+						</div>
 					</div>
 				</div>
 			);
@@ -99,13 +114,13 @@ export class Nav extends React.Component{
 			return(
 				<div className={this.state.classes.join(" ")} role="navigation">
 					<div className={tabHolderClass.join(" ")} id="navbar-tab-holder-left">
-						<div className="navbar-tab navbar-tab-left navbar-tab-big"><a href="/">Producer<br/>Farms</a></div>
+						<div className="navbar-tab navbar-tab-left navbar-tab-big"><a href="/">Producers<br/>Farms</a></div>
 						<div className="navbar-tab navbar-tab-left navbar-tab-big"><a href="/">Distributors<br/>Food hubs</a></div>
 						<div className="navbar-tab navbar-tab-left"><a href="/">Buyers</a></div>
 					</div>
 					<NavLogo ref={(child) => {this.logo = child}} initialState={this.state.collapsed} type="center"/>
 					<div className={tabHolderClass.join(" ")} id="navbar-tab-holder-right">
-						<div className="navbar-tab navbar-tab-right"><a href="/aboutus">About Us</a></div>
+						<div className="navbar-tab navbar-tab-right"><a href="/aboutus">About</a></div>
 						<div className="navbar-tab navbar-tab-right"><a href="/contact">Contact</a></div>
 						<div className="navbar-tab navbar-tab-right"><a href="/">News</a></div>
 						<div className="navbar-tab navbar-tab-right"><a href="/">Login</a></div>

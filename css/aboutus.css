@@ -1,0 +1,71 @@
+#aboutus-title{
+	width: 50vw;
+	font-size: calc(20px + 3vw);
+	text-align: left !important;
+	padding-left: 60px;
+	position: relative;
+	float: left;
+	color: white;
+}
+
+#aboutus-text{
+	height: auto;
+	width: calc(100px + 40vw);
+	color: white;
+	position: relative;
+	float: left;
+	margin-left: 60px;
+	text-align: justify;
+    text-justify: inter-word;
+}
+
+#aboutus-image{
+	height: 300px;
+	width: 300px;
+	background-color: blue;
+	position: absolute;
+	margin-top: 40px;
+	right: 11vw;
+}
+
+#aboutus-profiles{
+	width: 100vw;
+	height: auto;
+	float: left;
+}
+
+.person-profile{
+	width: 25vw;
+	float: left;
+	min-width: 200px;
+	margin-bottom: 20px;
+}
+
+img.profile-pic{
+	width: 80%;
+	margin-left: 10%;
+}
+
+.profile-name{
+	float: left;
+	margin-top: 20px;
+	color: white;
+	width: 100%;
+	font-size: 30px;
+	text-align: center;
+}
+
+.profile-title{
+	font-size: 20px;
+	margin-top: 0px;
+}
+
+.profile-description{
+	width: 90%;
+	margin-left: 5%;
+	float: left;
+	color: white;
+	margin-top: 20px;
+	/*text-align: justify;
+    text-justify: inter-word;*/
+}
