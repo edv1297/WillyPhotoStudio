@@ -1,0 +1,17 @@
+  @font-face {
+			  font-family: 'AvenirLight';
+			  src: url('assets/AvenirLTStd-Light.otf') format('opentype');
+			}
+
+      @font-face {
+			  font-family: 'AvenirRoman';
+			  src: url('assets/AvenirLTStd-Roman.otf') format('opentype');
+			}
+
+  body,header,div,h1,h2, .MainText{
+    font-family: 'AvenirLight';
+
+  }
+body{
+  overflow-y: scroll;
+}

@@ -4,12 +4,23 @@
 }
 
 #footer{
-    background-color: red;
-    height: 100px;
+    background-color: #212942;
+    max-height: 50px;
+    height: 10vw;
     width: 100vw;
     float: left;
 }
 
+#customer-type-mask{
+    width :100vw;
+    height : 33.4vw;
+    background-color: rgba(69,35,23,0.5);
+    z-index: 4!important;
+    position: absolute;
+
+
+
+}
 #page-title-text{
     top: calc(calc(100vw * 555) / 1281 / 2.5);
     font-size: 3.8vw;
@@ -21,30 +32,53 @@
 }
 
 #bio{
-    height: 500px;
+    height: auto;
 }
 
 #bio-header{
-    font-size: 50px;
+    font-size: 100px;
     position: absolute;
     margin-top: 70px;
+    padding-bottom:20px;
     margin-left: 80px;
-    color: white;
+    color: #F7F7F7;
 }
 
+.section-header{
+  width:900px;
+  margin-top:20px;
+  height: auto;
+
+  font-size: 40px;
+  color: #F7F7F7;
+}
+
+.bio-content{
+  width: 50vw;
+  padding-top: 5px;
+  padding-bottom: 25px;
+  font-size: 24px;
+}
+
+.signUp-box{
+height:auto;
+
+}
 #bio-body{
-    height: 250px;
+    height: auto;
     width: 600px;
-    position: absolute;
-    margin-top: 170px;
-    margin-left: 80px;
-    color:white;
+    position: relative;
+    margin-top: 230px;
+    margin-left: 5vw;
+    color:#F7F7F7;
 }
 
 #bio-picture{
     background-color: blue;
-    height: 400px;
-    width: 400px;
+    height:800px;
+    width: 800px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
     position: relative;
     float: right;
     margin-right: 80px;
@@ -59,15 +93,23 @@
     float: left;
 }
 
+
+#img-text{
+    top: -25vw;
+    position: relative;
+
+
+}
 .main-link-button{
     width: 25vw;
     height: 25vw;
-    background-color: orange;
     color: white;
     line-height: 25vw;
+    position: relative;
     text-align: center;
     font-size: 3.1vw;
     float: left;
+
 }
 
 input#email-input{

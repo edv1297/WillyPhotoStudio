@@ -98,11 +98,11 @@ div.logo-shrunken{
 }
 
 div.navbar-tab-holder{
-    height: 30px;
-    width: calc(100vw / 4);
-    position: absolute;
-    top: calc(50% - var(--navbar-tab-height) / 2) !important;
-    font-size: 16px;
+  height: 30px;
+  width: calc(100vw / 4);
+  position: absolute;
+  top: calc(50% - var(--navbar-tab-height) / 2) !important;
+  font-size: 1.25vw;
 }
 
 div#navbar-tab-holder-left{
@@ -132,9 +132,8 @@ div.navbar-tab-right{
     height: auto;
 }
 
-div.navbar-tab-big{
-    line-height: 20px;
-}
+
+
 
 div#navigator-dropdown-toggle{
     height: 50px;
@@ -155,7 +154,7 @@ div#popout-navigator{
 .popnavi-links{
     width: 80vw;
     left: 10vw;
-    top: 120px;
+    top: 14vw;
     position: absolute;
 }
 
@@ -169,15 +168,41 @@ div#popout-navigator{
         margin-top: 20px;
     }
 
+    div.navbar-tab-big{
+        line-height: 20px;
+    } 
+
 }
 
-@media only screen and (max-width : 770px){    
+@media only screen and (min-width : 1300px){    
+    
     .popnavi-link{
         width: 100%;
-        font-size: 26px;
+        font-size: 3vw;
         color: white;
         position: relative;
         float: left;
         margin-top: 20px;
     }
+
+    div.navbar-tab-big{
+      line-height: 1vw;
+      font-size: 1vw;
+    }
+
+}
+
+@media only screen and (max-width : 770px){    
+    .popnavi-link{
+        width: 100%;
+        font-size: calc(20px + 1vw);
+        color: white;
+        position: relative;
+        float: left;
+        margin-top: 20px;
+    }
+
+    div.navbar-tab-big{
+        line-height: 20px;
+    } 
 }
