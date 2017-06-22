@@ -91,10 +91,7 @@ export const CustomerTypeSelection = (props) => {
 
     return(
        <div className="blurb-box" style={{height: 'auto'}}>
-<<<<<<< HEAD
 
-=======
->>>>>>> 38b07ed63036a23cbe21f2a80679e487f4b92fb3
           <div className="customer-type-button">
               <a href="/producer"><img src = "./assets/frontFacing/producer.jpg" width="100%"/></a>
           </div>
@@ -114,12 +111,11 @@ export const CustomerTypeSelection = (props) => {
 export const Bio = (props) => {
     return(
         <div id="bio" className="blurb-box">
-<<<<<<< HEAD
+
         <div id="bio-picture">
           <img src = "./assets/blueBerries.JPG"  width = "100%"/>
         </div>
-=======
->>>>>>> 38b07ed63036a23cbe21f2a80679e487f4b92fb3
+        
             <div id="bio-header">This is our story</div>
             <div id="bio-picture">
                 {!isMobile() ? <img src={ "assets/blueBerries.jpg"} width="100%"/> : <div/>}
