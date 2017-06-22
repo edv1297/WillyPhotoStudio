@@ -3,26 +3,15 @@ import React from "react";
 import { Nav } from "./Nav";
 import {Footer} from "./Footer";
 
-export class Landing extends React.Component{
-    constructor(props){
-      super();
-      window.document.body.style.backgroundColor = "#232428";
-    }
+export const Landing = () => {
 
-    componentDidMount(){
-      window.addEventListener('resize', (() => {this.setState({})}).bind(this));
-    }
+    window.document.body.style.backgroundColor = "#232428";
 
-    componentWillUnmount(){
-      window.removeEventListener("resize", (() => {this.setState({})}).bind(this));
-    }
-
-    render(){
-      return(
+    return(
         <div>
-            <Nav collapsable={true}/>
+            <Nav collapsable={!isMobile()}/>
             <div id="main-image" className="drop-shadow">
-                <img src="assets/farmImage.jpg" width={window.innerWidth}/>
+                <img src="assets/farmImage.jpg" width="100%"/>
                 <div id="page-title-text" className="header-title">Uniting the local food community</div>
                 <div id="page-sub-title" className="header-title">One<span style={{color: '#DE1500'}}> byte</span> at a time.</div>
             </div>
@@ -36,8 +25,8 @@ export class Landing extends React.Component{
             <div className="horizontal-spacer"></div>
             <Footer/>
         </div>
-      );
-    }
+    );
+    
 }
 
 export const MainLinks = (props) => {
@@ -63,8 +52,8 @@ export const MainLinks = (props) => {
           <div className="main-link-button">
             <img src = "./assets/frontFacing/creamery.png" style = {{width:'25vw'}}/>
             <div id = "img-text">services</div>
-            </div>
           </div>
+       </div>
     );
 }
 

@@ -14,9 +14,9 @@ export class AboutUs extends React.Component{
             <div>
                 <Nav collapsable={false}/>
                 <div className="navbar-replace"></div>
-                <div className="blurb-box">
+                <div className="blurb-box" style={{height: 'auto'}}>
                     <div id="aboutus-title">About Us</div>
-                    <div id="aboutus-image" style={{display: window.innerWidth >= 770 ? "block" : "none"}}>
+                    <div id="aboutus-image" style={{display: isMobile() ? "none" : "block"}}>
                         <img src="assets/team.jpg" style={{width: '100%'}}/>
                     </div>
                     <div id="aboutus-text">
@@ -29,6 +29,7 @@ export class AboutUs extends React.Component{
                           </p>
                     </div>
                 </div>
+                <div className="horizontal-spacer"></div>
                 <div className="horizontal-spacer"></div>
                 <div id="aboutus-profiles">
                     <div className="person-profile">

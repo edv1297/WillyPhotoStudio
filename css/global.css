@@ -67,12 +67,6 @@ body {
     background-color: #232428;
 }
 
-.horizontal-spacer{
-    width: 100vw;
-    float: left;
-    height: 50px;
-}
-
 textarea, input {
 	border: none;
 	color: var(--white);
@@ -87,4 +81,20 @@ textarea, input {
 textarea:focus, input:focus{
 	outline: none;
 	border-color: #13E0F4;
+}
+
+@media only screen and (min-width : 771px){    
+    .horizontal-spacer{
+	    width: 100vw;
+	    float: left;
+	    height: 50px;
+	}
+}
+
+@media only screen and (max-width : 770px){    
+     .horizontal-spacer{
+	    width: 100vw;
+	    float: left;
+	    height: 20px;
+	}
 }

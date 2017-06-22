@@ -57,7 +57,7 @@ textarea.contact-textarea{
 	margin-top: 30px;
 }
 
-@media only screen and (min-width : 770px){
+@media only screen and (min-width : 771px){
     .info-input-container{
 		max-width: 420px;
 		width: 90vw;
