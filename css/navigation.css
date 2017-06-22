@@ -15,7 +15,7 @@ div.navigator{
     position: fixed;
     top: 0;
     z-index: 20;
-} 
+}
 
 div.navigator-full{
     background-color: transparent;
@@ -97,13 +97,7 @@ div.logo-shrunken{
     top: calc(50% - 25px);
 }
 
-div.navbar-tab-holder{
-  height: 30px;
-  width: calc(100vw / 4);
-  position: absolute;
-  top: calc(50% - var(--navbar-tab-height) / 2) !important;
-  font-size: 1.25vw;
-}
+
 
 div#navbar-tab-holder-left{
     left: 13vw;
@@ -132,9 +126,6 @@ div.navbar-tab-right{
     height: auto;
 }
 
-
-
-
 div#navigator-dropdown-toggle{
     height: 50px;
     width: 50px;
@@ -158,7 +149,7 @@ div#popout-navigator{
     position: absolute;
 }
 
-@media only screen and (min-width : 771px){    
+@media only screen and (min-width : 771px){
     .popnavi-link{
         width: 100%;
         font-size: 3vw;
@@ -170,12 +161,19 @@ div#popout-navigator{
 
     div.navbar-tab-big{
         line-height: 20px;
-    } 
+    }
+    div.navbar-tab-holder{
+      height: 30px;
+      width: calc(100vw / 4);
+      position: absolute;
+      top: calc(50% - var(--navbar-tab-height) / 2) !important;
+      font-size: 1.25vw;
+    }
 
 }
 
-@media only screen and (min-width : 1300px){    
-    
+@media only screen and (min-width : 1850px){
+
     .popnavi-link{
         width: 100%;
         font-size: 3vw;
@@ -185,14 +183,25 @@ div#popout-navigator{
         margin-top: 20px;
     }
 
+    div.navbar-tab-holder{
+      height: 30px;
+      width: calc(100vw / 4);
+      position: absolute;
+      top: calc(55% - var(--navbar-tab-height) / 2) !important;
+      font-size: .9vw;
+
+    }
+
+
+
     div.navbar-tab-big{
-      line-height: 1vw;
-      font-size: 1vw;
+      line-height: .7vw;
+      font-size: .7vw;
     }
 
 }
 
-@media only screen and (max-width : 770px){    
+@media only screen and (max-width : 770px){
     .popnavi-link{
         width: 100%;
         font-size: calc(20px + 1vw);
@@ -203,6 +212,14 @@ div#popout-navigator{
     }
 
     div.navbar-tab-big{
-        line-height: 20px;
-    } 
+        line-height: 1vw;
+        font-size: 1vw;
+    }
+    div.navbar-tab-holder{
+      height: 30px;
+      width: calc(100vw / 4);
+      position: absolute;
+      top: calc(50% - var(--navbar-tab-height) / 2) !important;
+      font-size: 1.25vw;
+    }
 }

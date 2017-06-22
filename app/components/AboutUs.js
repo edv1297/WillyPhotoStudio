@@ -21,7 +21,7 @@ export class AboutUs extends React.Component{
                     </div>
                     <div id="aboutus-text">
                           <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
                           </p>
                           <br/>
                           <p>
@@ -33,33 +33,33 @@ export class AboutUs extends React.Component{
                 <div className="horizontal-spacer"></div>
                 <div id="aboutus-profiles">
                     <div className="person-profile">
-                        <img src="assets/sprofile.jpg" className="profile-pic" />
+                        <img src="assets/aboutus/joe-headshot.png" className="founder-profile-pic" />
                         <div className="profile-name">Joe Bergeron</div>
-                        <div className="profile-name profile-title">Job Title</div>
+                        <div className="profile-name profile-title">CTO</div>
                         <div className="profile-description">
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
                         </div>
                     </div>
                     <div className="person-profile">
-                        <img src="assets/sprofile.jpg" className="profile-pic" />
+                        <img src="assets/aboutus/mia-headshot.png" className="founder-profile-pic" />
                         <div className="profile-name">Mia Gancayco</div>
-                        <div className="profile-name profile-title">Job Title</div>
+                        <div className="profile-name profile-title">Founder</div>
                         <div className="profile-description">
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
                         </div>
                     </div>
                     <div className="person-profile">
-                        <img src="assets/sprofile.jpg" className="profile-pic" />
+                        <img src="assets/aboutus/michael-headshot.jpg" className="dev-profile-pic" />
                         <div className="profile-name">Michael Wong</div>
-                        <div className="profile-name profile-title">Job Title</div>
+                        <div className="profile-name profile-title">Software Developer & Design</div>
                         <div className="profile-description">
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
                         </div>
                     </div>
                     <div className="person-profile">
-                        <img src="assets/sprofile.jpg" className="profile-pic" />
+                        <img src="assets/aboutus/eddy-headshot.jpg" className="dev-profile-pic" />
                         <div className="profile-name">Eddy Varela</div>
-                        <div className="profile-name profile-title">Job Title</div>
+                        <div className="profile-name profile-title">Software Developer & Photography</div>
                         <div className="profile-description">
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
                         </div>
@@ -69,5 +69,5 @@ export class AboutUs extends React.Component{
                 <Footer/>
             </div>
         );
-    }   
+    }
 }

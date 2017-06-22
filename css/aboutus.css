@@ -20,10 +20,17 @@
 	margin-top: 50px;
 }
 
-img.profile-pic{
+img.dev-profile-pic{
 	width: 80%;
 	margin-left: 10%;
+	border-radius: 50%;
 }
+img.founder-profile-pic{
+	width: 80%;
+	margin-left: 10%;
+
+}
+
 
 .profile-name{
 	float: left;
@@ -39,7 +46,7 @@ img.profile-pic{
 	margin-top: 0px;
 }
 
-@media only screen and (min-width : 771px){    
+@media only screen and (min-width : 771px){
     .person-profile{
 		width: 25vw;
 		float: left;
@@ -80,7 +87,7 @@ img.profile-pic{
 
 }
 
-@media only screen and (max-width : 770px){    
+@media only screen and (max-width : 770px){
     .person-profile{
 		width: 100vw;
 		float: left;

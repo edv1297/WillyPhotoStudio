@@ -11,7 +11,7 @@ export const Landing = () => {
         <div>
             <Nav collapsable={!isMobile()}/>
             <div id="main-image" className="drop-shadow">
-                <img src={!isMobile() ? "assets/farmImage.jpg" : "assets/gallery-zoomin.png"} width="100%"/>
+                <img src="assets/farmImage.jpg" width="100%"/>
                 <div id="page-title-text" className="header-title">Uniting the local food community</div>
                 <div id="page-sub-title" className="header-title">One<span style={{color: '#DE1500'}}> byte</span> at a time.</div>
             </div>
@@ -76,7 +76,7 @@ export const CustomerTypeSelection = (props) => {
 
     return(
        <div className="blurb-box" style={{height: 'auto'}}>
-        <div id = "customer-type-mask"></div>
+
           <div className="customer-type-button">
             <img src = "./assets/frontFacing/producer.jpg" width={window.innerWidth/3}/>
 
@@ -94,9 +94,8 @@ export const CustomerTypeSelection = (props) => {
 export const Bio = (props) => {
     return(
         <div id="bio" className="blurb-box">
-        /<div id="bio-picture">
-          {!isMobile() ? <img src={  "assets/blueBerries.jpg"} width="100%"/> :
-          <div> </div>}
+        <div id="bio-picture">
+          <img src = "./assets/blueBerries.JPG"  width = "100%"/>
         </div>
             <div id="bio-header">This is our story</div>
 

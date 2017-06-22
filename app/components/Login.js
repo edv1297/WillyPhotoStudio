@@ -1,6 +1,7 @@
+/*This class is resposible for the login page of
+FoodLove LLC 2017 */
 
 import React from 'react';
-
 import { Nav } from "./Nav";
 import {Footer} from './Footer';
 
@@ -14,9 +15,10 @@ export class Login extends React.Component{
     }
 
     render(){
-
+        //create a body that is empty at first to hold the corresponding forms and buttons
         var body = null;
 
+        //if the user has not clicked the register button use the login setup
         if(!this.state.registerClicked ){
             body = (
                 <div>
@@ -26,7 +28,7 @@ export class Login extends React.Component{
                     </div>
                 </div>
                 );
-            }else {
+            }else { /*register format */
                 body = (
                 <div>
                     <div className="info-input-container">
@@ -56,7 +58,7 @@ export class Login extends React.Component{
                         <div className="info-input-container">
                             <input placeholder="Password" className="contact-input"/>
                         </div>
-                        {body}
+                        {body} /* renders out the body that is neccessary*/
                         <div className="horizontal-spacer"></div>
                         <Footer/>
                     </div>

@@ -83,7 +83,7 @@ textarea:focus, input:focus{
 	border-color: #13E0F4;
 }
 
-@media only screen and (min-width : 771px){    
+@media only screen and (min-width : 771px){
     .horizontal-spacer{
 	    width: 100vw;
 	    float: left;
@@ -91,7 +91,7 @@ textarea:focus, input:focus{
 	}
 }
 
-@media only screen and (max-width : 770px){    
+@media only screen and (max-width : 770px){
      .horizontal-spacer{
 	    width: 100vw;
 	    float: left;

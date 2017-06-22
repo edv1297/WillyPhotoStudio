@@ -8,15 +8,12 @@
 	height: auto;
 	width: 100vw;
 	float: left;
-	position: relative;
+	position:relative;
 }
 
 .info-input-container{
-	max-width: 420px;
-	width: 90vh;
-	background-color: blue;
-	margin-right: auto;
 	margin-left: auto;
+	margin-right: auto;
 	margin-top: 20px;
 }
 
@@ -24,61 +21,58 @@ input.contact-input{
 	/*border: solid;*/
 	/*border-width: 1px;*/
 	text-align: left;
+
 	padding-left: 10px;
-	width: 100%;
+	width: 40vw;
 	height: 45px;
 	font-size: 18px;
 	background-color: var(--white);
 	color: black;
-
 	border-bottom: none;
 	border-left: solid;
 	border-width: 4px;
 }
 
 textarea.contact-textarea{
-	width: 100%;
+	width: 40vw;
 	height: 300px;
 	text-align: left;
+
 	padding-left: 10px;
 	padding-top: 20px;
+	margin-bottom: 4vh;
 	font-size: 18px;
 	background-color: var(--white);
 	color: black;
-
 	border-bottom: none;
 	border-left: solid;
 	border-width: 4px;
 }
 
 #contact-submit{
-	position: relative;
-	text-align: center;
-	margin-top: 30px;
+		position: relative;
+	    text-align: center;
+		margin-top: 2vw;
 }
 
-@media only screen and (min-width : 771px){
+@media only screen and (min-width : 770.51px){
     .info-input-container{
-		max-width: 420px;
-		width: 90vw;
-		background-color: blue;
+		margin-left: 30vw;
 		margin-right: auto;
-		margin-left: auto;
 		margin-top: 20px;
 	}
 
 	#contactus-page-title{
 		font-size: calc(30px + 2vw);
 		position: relative;
-		float: left;
+		text-align: center;
 	}
 
 }
 
-@media only screen and (max-width : 770px){
+@media only screen and (max-width : 770.5px){
     .info-input-container{
 		width: 80vw ;
-		background-color: blue;
 		margin-left: 10vw;
 		margin-top: 20px;
 	}
@@ -89,5 +83,34 @@ textarea.contact-textarea{
 		float: left;
 		line-height: 32px;
 		margin-bottom: 20px;
+	}
+	input.contact-input{
+		/*border: solid;*/
+		/*border-width: 1px;*/
+		text-align: left;
+		padding-left: 10px;
+		width: 80vw;
+		height: 45px;
+		font-size: 18px;
+		background-color: var(--white);
+		color: black;
+		border-bottom: none;
+		border-left: solid;
+		border-width: 4px;
+	}
+
+	textarea.contact-textarea{
+		width: 80vw;
+		height: 40vw;
+		text-align: left;
+		padding-left: 10px;
+		padding-top: 20px;
+		margin-bottom: 4vh;
+		font-size: 18px;
+		background-color: var(--white);
+		color: black;
+		border-bottom: none;
+		border-left: solid;
+		border-width: 4px;
 	}
 }
