@@ -87,7 +87,7 @@ export const CustomerTypeSelection = (props) => {
 
     return(
        <div className="blurb-box" style={{height: 'auto'}}>
-        <div id = "customer-type-mask"></div>
+        
           <div className="customer-type-button">
             <img src = "./assets/frontFacing/producer.jpg" width={window.innerWidth/3}/>
 
