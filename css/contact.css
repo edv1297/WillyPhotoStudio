@@ -53,13 +53,11 @@ textarea.contact-textarea{
 
 #contact-submit{
 	position: relative;
-	float: left;
-	margin-left: auto;
-	margin-right: auto;
+	text-align: center;
 	margin-top: 30px;
 }
 
-@media only screen and (min-width : 770px){    
+@media only screen and (min-width : 770px){
     .info-input-container{
 		max-width: 420px;
 		width: 90vw;
@@ -77,7 +75,7 @@ textarea.contact-textarea{
 
 }
 
-@media only screen and (max-width : 770px){    
+@media only screen and (max-width : 770px){
     .info-input-container{
 		width: 80vw ;
 		background-color: blue;
@@ -89,8 +87,7 @@ textarea.contact-textarea{
 		font-size: 30px;
 		position: relative;
 		float: left;
-		line-height: 32px; 
+		line-height: 32px;
 		margin-bottom: 20px;
 	}
 }
-

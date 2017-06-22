@@ -1996,7 +1996,7 @@ select[multiple].input-lg {
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.428571429;
   border-radius: 2px;
   -webkit-user-select: none;
@@ -2074,9 +2074,12 @@ fieldset[disabled] .btn-default.active {
   background-color: #333333;
 }
 .btn-primary {
-  color: #ffffff;
-  background-color: #616d78;
+  color: #f7f7f7;
+  background-color: #212942;
   border-color: #56606a;
+  margin-left: 20px;
+  margin-right: 20px;
+
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -5766,4 +5769,3 @@ button.close {
     display: none !important;
   }
 }
-   

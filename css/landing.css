@@ -3,14 +3,6 @@
     height: auto;
 }
 
-#footer{
-    background-color: #212942;
-    max-height: 50px;
-    height: 10vw;
-    width: 100vw;
-    float: left;
-}
-
 #customer-type-mask{
     width :100vw;
     height : 33.4vw;

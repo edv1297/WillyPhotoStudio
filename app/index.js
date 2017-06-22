@@ -9,6 +9,7 @@ import { AboutUs } from "./components/AboutUs";
 import { Producer } from "./components/LearnMore";
 import { Distributor } from "./components/LearnMore";
 import { Buyer } from "./components/LearnMore";
+import { SignIn } from "./components/SignIn";
 
 
 export const App = (props) => {
@@ -16,12 +17,13 @@ export const App = (props) => {
 		<div>
 			<Router>
 				<div>
-					<Route exact path="/" component={ Landing }/>
+					<Route exact path="/" component={ SignIn }/>
 					<Route exact path="/contact" component={ Contact }/>
 					<Route exact path="/aboutus" component={ AboutUs }/>
 					<Route exact path="/producer" component={ Producer }/>
 					<Route exact path="/distributor" component={ Distributor }/>
 					<Route exact path="/buyer" component={ Buyer }/>
+					<Route exact path="/a" component={ SignIn }/>
 				</div>
 			</Router>
 		</div>
