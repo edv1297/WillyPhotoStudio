@@ -17,7 +17,6 @@ export class SignIn extends React.Component{
 
         var body = null;
 
-<<<<<<< HEAD
         if(!this.state.registerClicked ){
             body = (
                 <div>
