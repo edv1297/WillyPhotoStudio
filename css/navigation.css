@@ -154,7 +154,7 @@ div#popout-navigator{
 .popnavi-links{
     width: 80vw;
     left: 10vw;
-    top: 120px;
+    top: 14vw;
     position: absolute;
 }
 
@@ -195,7 +195,7 @@ div#popout-navigator{
 @media only screen and (max-width : 770px){    
     .popnavi-link{
         width: 100%;
-        font-size: 26px;
+        font-size: calc(20px + 1vw);
         color: white;
         position: relative;
         float: left;
