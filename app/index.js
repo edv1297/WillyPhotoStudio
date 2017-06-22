@@ -17,7 +17,7 @@ export const App = (props) => {
 		<div>
 			<Router>
 				<div>
-					<Route exact path="/" component={ SignIn }/>
+					<Route exact path="/" component={ Landing }/>
 					<Route exact path="/contact" component={ Contact }/>
 					<Route exact path="/aboutus" component={ AboutUs }/>
 					<Route exact path="/producer" component={ Producer }/>

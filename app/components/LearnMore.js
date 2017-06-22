@@ -57,7 +57,7 @@ const LearnMoreTemplates = {
             },
             "2": {
                 "icon": "globe.png",
-                "heading": <span>Expand your customer network</span>,
+                "heading": <span>Expand your<br/>customer network</span>,
                 "text": <span>Farms want to find new sales channels. Buyers want to find new sources. We bring them all to you. Send invitations to connect to nearby farms and buyers and begin working with your new partners immediately.</span>
             },
             "3": {
@@ -90,12 +90,12 @@ const LearnMoreTemplates = {
             },
             "3": {
                 "icon": "location.png",
-                "heading": <span>Know where<br/>your food comes from</span>,
+                "heading": <span>Know where your<br/>food comes from</span>,
                 "text": <span>The food you’re ordering is one of a kind. Explore producer profiles to learn about the people behind your food. Check out certifications and awards. Dig deeper with our multimedia gallery. Find out how you’ve reduced your carbon footprint by buying locally.</span>
             },
             "4": {
                 "icon": "search.png",
-                "heading": <span>Find new products<br/>you and your customers will love</span>,
+                "heading": <span>Find products you and<br/>your customers will love</span>,
                 "text": <span>Discover what your local artisans and distributors have to offer. Connect with producers and distributors that meet your business needs. Browse through featured products and foods to inspire your next dish.</span>
             }
         }
@@ -116,7 +116,7 @@ export class LearnMore extends React.Component{
     render(){
         return(
             <div>
-                <Nav collapsable={window.innerWidth >= 770}/>
+                <Nav collapsable={!isMobile()}/>
                 <div id="learnmore-main">
                     <img src={this.template["main-image"]} width="100%" style={{opacity:'0.5'}}/>
                     <div id="learnmore-title">{this.template["title"]}</div>
@@ -154,9 +154,14 @@ export class LearnMore extends React.Component{
                             <div className="feature-header">{this.template["features"]["4"]["heading"]}</div>
                             <div className="feature-text">{this.template["features"]["4"]["text"]}</div>
                         </div>
-
                     </div>
                 </div>
+                <div className="horizontal-spacer"></div>
+                <div className="horizontal-spacer"></div>
+                <div id="signup-big">
+                    <button id="signup-big-button" className="btn btn-lg btn-success">Sign Up Now!</button>
+                </div>
+                <div className="horizontal-spacer"></div>
                 <Footer />
             </div>
         );

@@ -6,9 +6,9 @@ export const Footer = (props) => {
     }else{
     return(
         <div id ="footer">
-                <div  className="footer-text"> All rights reserved © FoodLove 2017</div>
+                <div  className="footer-text"> All rights reserved © FoodLove Services LLC 2017</div>
+                <div className="footer-text"></div>
                 <div className="footer-text"> Designed with <span style={{color: '#b51e1e'}}> love</span> by our developers</div>
-
         </div>
     );
     }

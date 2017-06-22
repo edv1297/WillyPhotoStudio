@@ -115,8 +115,8 @@ export class Nav extends React.Component{
   			return(
   				<div className={this.state.classes.join(" ")} role="navigation">
 	  				<div className={tabHolderClass.join(" ")} id="navbar-tab-holder-left">
-		  				<div className="navbar-tab navbar-tab-left navbar-tab-big"><a href="/producer">Producers/<br/>Farms</a></div>
-		  				<div className="navbar-tab navbar-tab-left navbar-tab-big"><a href="/distributor">Distributors/<br/>Food hubs</a></div>
+		  				<div className="navbar-tab navbar-tab-left navbar-tab-big"><a href="/producer">Producers<br/>Farms</a></div>
+		  				<div className="navbar-tab navbar-tab-left navbar-tab-big"><a href="/distributor">Distributors<br/>Food hubs</a></div>
 		  				<div className="navbar-tab navbar-tab-left"><a href="/buyer">Buyers</a></div>
 	  				</div>
 	  				<NavLogo ref={(child) => {this.logo = child}} initialState={this.state.collapsed} type="center"/>
