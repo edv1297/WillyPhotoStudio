@@ -4,7 +4,7 @@ import React from 'react';
 import { Nav } from "./Nav";
 import {Footer} from './Footer';
 
-export class SignIn extends React.Component{
+export class Login extends React.Component{
     constructor(props){
         super(props);
         this.state = {registerClicked:false}

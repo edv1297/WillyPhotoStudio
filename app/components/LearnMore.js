@@ -46,8 +46,8 @@ const LearnMoreTemplates = {
     },
     "distributor": {
         "name": "Distributor",
-        "main-image": "assets/producer.jpg",
-        "title": <span>You want to source locally.{!isMobile() ? <br/> : <div/>} We’re here to help.</span>,
+        "main-image": "assets/distributors.jpg",
+        "title": <span>You want to source locally.{window.innerWidth >= 770 ? <br/> : <div/>} We’re here to help.</span>,
         "subtitle": <span>With FoodLove, buying local is<br/>convenient, efficient, and all in one place.</span>,
         "features":{
             "1": {
@@ -74,7 +74,7 @@ const LearnMoreTemplates = {
     },
     "buyer":{
         "name": "Buyer",
-        "main-image": "assets/producer.jpg",
+        "main-image": "assets/buyers.jpg",
         "title": <span>You have a business to run.<br/>We’ve got your back.</span>,
         "subtitle": <span>Simple, powerful tools that make working with buyers and producers efficient and effective.</span>,
         "features":{
@@ -166,5 +166,5 @@ export class LearnMore extends React.Component{
                 <Footer />
             </div>
         );
-    }   
+    }
 }

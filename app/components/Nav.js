@@ -104,7 +104,7 @@ export class Nav extends React.Component{
 		  						<div className="popnavi-link"><a href="/aboutus">About</a></div>
 		  						<div className="popnavi-link"><a href="/contact">Contact</a></div>
 		  						<div className="popnavi-link"><a href="/">News</a></div>
-		  						<div className="popnavi-link"><a href="/">Login</a></div>
+		  						<div className="popnavi-link"><a href="/login">Login</a></div>
 	  						</div>
 	  					</div>
 	  				</div>
@@ -124,7 +124,7 @@ export class Nav extends React.Component{
 		  				<div className="navbar-tab navbar-tab-right"><a href="/aboutus">About</a></div>
 		  				<div className="navbar-tab navbar-tab-right"><a href="/contact">Contact</a></div>
 		  				<div className="navbar-tab navbar-tab-right"><a href="/">News</a></div>
-		  				<div className="navbar-tab navbar-tab-right"><a href="/">Login</a></div>
+		  				<div className="navbar-tab navbar-tab-right"><a href="/login">Login</a></div>
 	  				</div>
   				</div>
   				);

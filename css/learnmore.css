@@ -5,7 +5,7 @@
 	float: left;
 }
 
-@media only screen and (min-width : 771px){    
+@media only screen and (min-width : 771px){
     #learnmore-main{
 		width: 100vw;
 		height: 550px;
@@ -16,7 +16,7 @@
 	#learnmore-title{
 		font-size: 3.8vw;
 		position: absolute;
-		top: 14vw;
+		top: 12vw;
 		left: 200px;
 		color: white;
 	}
@@ -24,7 +24,7 @@
 	#learnmore-subtitle{
 		position: absolute;
 		width: 500px;
-		top: 26vw;
+		top: 24vw;
 		left: 200px;
 		color:white;
 		font-size: 1.8vw;
@@ -103,7 +103,7 @@
 
 }
 
-@media only screen and (max-width : 770px){    
+@media only screen and (max-width : 770px){
     #learnmore-main{
 		width: 100vw;
 		float: left;
@@ -202,11 +202,12 @@
 }
 
 @media only screen and (width : 768px){ 
+
 	#learnmore-title{
 		width: 90vw;
 		font-size: 5.5vw;
 		position: absolute;
-		top: 12vw;
+		top: 14vw;
 		left: 5vw;
 		color: white;
 		text-align: center;
@@ -216,7 +217,7 @@
 		width: 60vw;
 		text-align: center;
 		position: absolute;
-		top: 30vw;
+		top: 37vw;
 		left: 20vw;
 		color:white;
 		font-size: 3.5vw;

@@ -9,7 +9,7 @@ import { AboutUs } from "./components/AboutUs";
 import { Producer } from "./components/LearnMore";
 import { Distributor } from "./components/LearnMore";
 import { Buyer } from "./components/LearnMore";
-import { SignIn } from "./components/SignIn";
+import { Login } from "./components/Login";
 
 
 export const App = (props) => {
@@ -23,7 +23,7 @@ export const App = (props) => {
 					<Route exact path="/producer" component={ Producer }/>
 					<Route exact path="/distributor" component={ Distributor }/>
 					<Route exact path="/buyer" component={ Buyer }/>
-					<Route exact path="/login" component={ SignIn }/>
+					<Route exact path="/login" component={ Login }/>
 				</div>
 			</Router>
 		</div>
