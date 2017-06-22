@@ -47,7 +47,7 @@ const LearnMoreTemplates = {
     "distributor": {
         "name": "Distributor",
         "main-image": "assets/producer.jpg",
-        "title": <span>You want to source locally and responsibly.{window.innerWidth >= 770 ? <br/> : <div/>} We’re here to help.</span>,
+        "title": <span>You want to source locally.{!isMobile() ? <br/> : <div/>} We’re here to help.</span>,
         "subtitle": <span>With FoodLove, buying local is<br/>convenient, efficient, and all in one place.</span>,
         "features":{
             "1": {
