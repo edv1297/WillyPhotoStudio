@@ -158,6 +158,7 @@ export class LearnMore extends React.Component{
                 </div>
                 <div className="horizontal-spacer"></div>
                 <div className="horizontal-spacer"></div>
+                <div className="horizontal-spacer"></div>
                 <div id="signup-big">
                     <button id="signup-big-button" className="btn btn-lg btn-success">Sign Up Now!</button>
                 </div>

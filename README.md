@@ -13,7 +13,7 @@ Include this in a `package.json` file
   "license": "ISC", 
   "scripts": {  
     "start": "npm run build",  
-    "build": "webpack -d && cp client/index.html dist/index.html && webpack-dev-server --content-base client/ --inline --hot --port 3000",  
+    "build": "webpack -d && cp client/index.html dist/index.html && webpack-dev-server --content-base client/ --inline --history-api-fallback --hot --port 3000",  
     "build:prod": "webpack -p && cp client/index.html dist/index.html"  
     }
  }

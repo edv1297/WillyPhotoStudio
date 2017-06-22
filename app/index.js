@@ -23,7 +23,7 @@ export const App = (props) => {
 					<Route exact path="/producer" component={ Producer }/>
 					<Route exact path="/distributor" component={ Distributor }/>
 					<Route exact path="/buyer" component={ Buyer }/>
-					<Route exact path="/a" component={ SignIn }/>
+					<Route exact path="/login" component={ SignIn }/>
 				</div>
 			</Router>
 		</div>
