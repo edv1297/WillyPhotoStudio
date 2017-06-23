@@ -7,16 +7,15 @@
 
 @media only screen and (min-width : 771px){
     #learnmore-main{
-		width: 100vw;
-		height: 550px;
 		float: left;
-		overflow: hidden;
+		overflow-x: hidden;
+		width: 100vw;
 	}
 
 	#learnmore-title{
 		font-size: 3.8vw;
 		position: absolute;
-		top: 12vw;
+		top: 15vw;
 		left: 200px;
 		color: white;
 	}
@@ -24,7 +23,7 @@
 	#learnmore-subtitle{
 		position: absolute;
 		width: 500px;
-		top: 24vw;
+		top: 28vw;
 		left: 200px;
 		color:white;
 		font-size: 1.8vw;
@@ -32,8 +31,15 @@
 
 	button#signup-button{
 		position: absolute;
-		top: 35vw;
-		left: 350px;
+		top: 38vw;
+		left: 20vw;
+		text-align: center;
+	}
+
+	img#scroll-down{
+		position: absolute;
+		top: 90vh;
+		left: 0px;
 	}
 
 	#learnmore-features{
@@ -113,22 +119,22 @@
 
 	#learnmore-title{
 		width: 90vw;
-		font-size: 5.5vw;
+		font-size: 6.5vw;
 		position: absolute;
-		top: 18.6vw;
+		top: 36vh;
 		left: 5vw;
 		color: white;
 		text-align: center;
 	}
 
 	#learnmore-subtitle{
-		width: 60vw;
+		width:80vw;
 		text-align: center;
 		position: absolute;
-		top: 38vw;
-		left: 20vw;
+		top: 50vh;
+		left: 10vw;
 		color:white;
-		font-size: 3.5vw;
+		font-size: 4.4vw;
 	}
 
 	button#signup-button{
@@ -138,6 +144,13 @@
 		width: 60vw;
 		margin-left: 20vw;
 		font-size: 4vw;
+		display: none;
+	}
+
+	img#scroll-down{
+		/*display: none;*/
+		position: absolute;
+		top: 90vh;
 	}
 
 	#learnmore-features{
@@ -207,7 +220,7 @@
 		width: 90vw;
 		font-size: 5.5vw;
 		position: absolute;
-		top: 14vw;
+		top: 36vh;
 		left: 5vw;
 		color: white;
 		text-align: center;
@@ -217,10 +230,15 @@
 		width: 60vw;
 		text-align: center;
 		position: absolute;
-		top: 37vw;
+		top: 53vh;
 		left: 20vw;
 		color:white;
-		font-size: 3.5vw;
+		font-size: 3vw;
+	}
+
+	img#scroll-down{
+		position: absolute;
+		top: 90vh;
 	}
 
 	button#signup-button{

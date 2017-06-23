@@ -18,8 +18,9 @@
     max-height: 50px;
     height: 10vw;
     width: 100vw;
-	position: fixed;
- 	bottom: 0;
+	position: relative;
+ 	bottom: 0px;
+ 	float: left;
 }
 
 @font-face {
@@ -66,6 +67,12 @@ body {
     float: left;
 /*    background-color: #232428;
 */}
+
+img.down-arrow-svg{
+	width: 100vw;
+	text-align: center;
+	height: 25px;
+}
 
 textarea, input {
 	border: none;

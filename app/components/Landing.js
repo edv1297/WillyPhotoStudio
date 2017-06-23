@@ -14,6 +14,7 @@ export const Landing = () => {
                 <img src={!isMobile() ? "assets/farmImage.jpg" : "assets/gallery-zoomin.png"} width="100%"/>
                 <div id="page-title-text" className="header-title">Uniting the local food community</div>
                 <div id="page-sub-title" className="header-title">One<span style={{color: '#DE1500'}}> byte</span> at a time.</div>
+                <img src="assets/arrow.svg" className="down-arrow-svg" id="main-scroll-down"/>
             </div>
             <div className="horizontal-spacer"/>
             <Bio/>
