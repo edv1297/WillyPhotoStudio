@@ -11,10 +11,10 @@ export const Landing = () => {
         <div>
             <Nav collapsable={!isMobile()}/>
             <div id="main-image" className="drop-shadow">
-                <img src={!isMobile() ? "assets/farmImage.jpg" : "assets/gallery-zoomin.png"} width="100%"/>
+                <img src={!isMobile() ? "assets/frontFacing/farmImage.png" : "assets/frontFacing/gallery-zoomin.png"} width="100%"/>
                 <div id="page-title-text" className="header-title">Uniting the local food community</div>
-                <div id="page-sub-title" className="header-title">One<span style={{color: '#DE1500'}}> byte</span> at a time.</div>
                 <img src="assets/arrow.svg" className="down-arrow-svg" id="main-scroll-down"/>
+                <div id="page-sub-title" className="header-title">One byte at a time.</div>
             </div>
             <div className="horizontal-spacer"/>
             <Bio/>
@@ -93,13 +93,22 @@ export const CustomerTypeSelection = (props) => {
     return(
        <div className="blurb-box" style={{height: 'auto'}}>
           <div className="customer-type-button">
-              <a href="/producer"><img src = "./assets/frontFacing/producer.jpg" width="100%"/></a>
+          <img src = "./assets/icons/wheat.png" className = "icon" id= "producer-icon"/>
+              <a href="/producer"><img src = "./assets/frontFacing/producer.png" width="100%"/></a>
+              <div className = "customer-type-main-blurb" > Selling Products?</div>
+              <div className = "customer-type-description" id = 'producer-blurb'>Learn more about our producers</div>
           </div>
           <div className="customer-type-button">
-              <a href="/producer"><img src = "./assets/frontFacing/martys.png" width="100%"/></a>
+          <img src = "./assets/icons/truck.png" className = "icon"/>
+              <a href="/producer"><img src = "./assets/frontFacing/distributor.png" width="100%"/></a>
+               <div className = "customer-type-main-blurb" id = 'distributor'> Logistical Services?</div>
+               <div className = "customer-type-description" id = 'dist-blurb'>Learn more about our distributors</div>
           </div>
           <div className="customer-type-button">
-              <a href="/producer"><img src = "./assets/frontFacing/chefs.jpg" width="100%"/></a>
+            <img src = "./assets/icons/chefHat.png" className = "icon"/>
+              <a href="/producer"><img src = "./assets/frontFacing/buyer.png" width="100%"/></a>
+              <div className = "customer-type-main-blurb" id = 'buyer'> Retailer or Institution?</div>
+              <div className = "customer-type-description" id = 'buyer-blurb'>Learn more about our buyers</div>
           </div>
        </div>
     );
@@ -113,7 +122,7 @@ export const Bio = (props) => {
         <div id="bio" className="blurb-box">
             <div id="bio-header">This is our story</div>
             <div id="bio-picture">
-                {!isMobile() ? <img src={ "assets/blueBerries.jpg"} width="100%"/> : <div/>}
+                {!isMobile() ? <img src={ "assets/frontFacing/blueBerries.jpg"} width="100%"/> :  <div/>}
             </div>
             <div id="bio-body">
               <div className="bio-content">
@@ -130,7 +139,7 @@ export const Bio = (props) => {
                   </div>
               </div>
               <div className="bio-content">
-                  <div className="bio-icon">
+                  <div className="bio-icon" id = 'truck-icon'>
                       <img src="assets/icons/truck.png" height="100%"/>
                   </div>
                   <div className = "section-header">
@@ -149,7 +158,7 @@ export const Bio = (props) => {
                   </div>
                   <div className = "section-header">
                   {!isMobile() ? <span>At FoodLove, we’re here to<br/>empower the local food community.</span> : <span>At FoodLove, we’re<br/>here to empower<br/>the local food community.</span>}
-                    
+
                   </div>
                   <div className = "bio-text">
                     Our mission is to support wholesome, responsible agriculture.
@@ -163,7 +172,7 @@ export const Bio = (props) => {
                   </div>
                   <div className = "section-header">
                     {!isMobile() ? <span>Eat food you can feel good about.<br/><br/>Eat food you can love.</span> : <span>Eat food you can <br/>feel good about.<br/><br/>Eat food you can love.</span>}
-                    
+
                   </div>
               </div>
         </div>

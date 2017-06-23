@@ -19,7 +19,7 @@ export const Buyer = (props) => {
 const LearnMoreTemplates = {
     "producer": {
         "name": "Producer",
-        "main-image": "assets/producer.jpg",
+        "main-image": "assets/learnMore/producer.jpg",
         "title": <span>You have a farm to run. <br/> Let us take care of business.</span>,
         "subtitle": <span>Spend less time managing and more time doing what you love.</span>,
         "features":{
@@ -47,7 +47,7 @@ const LearnMoreTemplates = {
     },
     "distributor": {
         "name": "Distributor",
-        "main-image": "assets/distributors.jpg",
+        "main-image": "assets/learnMore/distributors.jpg",
         "title": <span>You want to source locally.{window.innerWidth >= 770 ? <br/> : <div/>} We’re here to help.</span>,
         "subtitle": <span>With FoodLove, buying local is<br/>convenient, efficient, and all in one place.</span>,
         "features":{
@@ -75,7 +75,7 @@ const LearnMoreTemplates = {
     },
     "buyer":{
         "name": "Buyer",
-        "main-image": "assets/buyers.jpg",
+        "main-image": "assets/learnMore/buyers.jpg",
         "title": <span>You have a business to run.<br/>We’ve got your back.</span>,
         "subtitle": <span>Simple, powerful tools that make working with buyers and producers efficient and effective.</span>,
         "features":{
