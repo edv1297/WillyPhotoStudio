@@ -45,7 +45,7 @@
 
      #bio-body{
         height: auto;
-        width: 53vw;
+        width: 55vw;
         position: relative;
         margin-left: 5vw;
         color:#F7F7F7;
@@ -58,8 +58,11 @@
         width: 7vw;
         float: left;
         position: relative;
-        /*background-color: pink;*/
+        margin-right: 1vw;
+
     }
+
+
 
     .section-header{
       width: calc(50vw - 100px);
@@ -96,6 +99,45 @@
         float: right;
         margin-right: 5vw;
         top: 40px;
+    }
+
+    .customer-type-description{
+        color: #ffffff;
+        position:absolute;
+        font-size:1.2vw;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+        top:16vw;
+        left:14vw;
+    }
+    .customer-type-main-blurb{
+        color: #ffffff;
+        position:absolute;
+        font-size:2vw;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+        top:12vw;
+        left:8vw;
+    }
+
+    img.icon{
+        position:absolute;
+        left:12.6vw;
+        top:2vw;
+        width: 10vw;
+        height: 10vw;
+    }
+
+    #producer-blurb{
+        left:6.5vw;
+    }
+    #dist-blurb{
+        left :7.5vw;
+    }
+    #buyer-blurb{
+        left:10vw;
+    }
+    img#producer-icon{
+        top: 1.7vw;
+        left:10vw;
     }
 
     .customer-type-button{
@@ -142,6 +184,42 @@
 
     #bio-picture{
         display:none;
+    }
+
+    .customer-type-button{
+        background-color: orange;
+        height: 100vw;
+        width: 100vw;
+        position: relative;
+        float: left;
+        cursor: pointer;
+    }
+    .customer-type-description{
+        color: #ffffff;
+        position:absolute;
+        font-size:18;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+        top:45vw;
+        width:100vw;
+        text-align: center;
+    }
+
+    .customer-type-main-blurb{
+        color: #ffffff;
+        position:absolute;
+        font-size:32;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+        top:30vw;
+        width: 100vw;
+        text-align: center;
+    }
+
+    img.icon{
+        position:absolute;
+        left:40.6vw;
+        top:10vw;
+        width: 18vw;
+        height:18vw;
     }
 
     #main-image{
