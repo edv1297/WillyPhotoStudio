@@ -64,8 +64,8 @@ body {
 	height: 10vw;
 	min-height: 200px;
     float: left;
-    background-color: #232428;
-}
+/*    background-color: #232428;
+*/}
 
 textarea, input {
 	border: none;
