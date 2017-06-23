@@ -13,13 +13,19 @@
     }
 
     #page-title-text{
-        top: calc(calc(100vw * 555) / 1281 / 2.5);
+        top: calc(100vw * 555 / 1281 / 2.5);
         font-size: 3.8vw;
     }
 
     #page-sub-title{
-        top: calc(calc(100vw * 555) / 1281 / 1.85);
+        top: calc(100vw * 555 / 1281 / 1.85);
         font-size: 2.6vw;
+    }
+
+    img#main-scroll-down{
+        position: absolute;
+        top: calc(100vw * 555 / 1281 / 1.1);
+        left: 0px;
     }
 
 

@@ -114,21 +114,36 @@ export class LearnMore extends React.Component{
         this.template = LearnMoreTemplates[this.type];
     }
 
+    componentDidMount(){
+        window.addEventListener('resize', this.handleResize.bind(this));
+    }
+
+    componentWillUnmount(){
+        window.removeEventListener('resize', this.handleResize.bind(this));
+    }
+
+    handleResize(){
+        this.setState({});
+    }
+
     goToSignUp(){
         window.location.href = "http://www.foodloveservices.com/users/sign_up";
     }
 
     render(){
+        const portrait = window.innerWidth / window.innerHeight > 1.97 && !isMobile();
+
         return(
             <div>
                 <Nav collapsable={!isMobile()}/>
-                <div id="learnmore-main">
-                    <img src={this.template["main-image"]} width="100%" style={{opacity:'0.5'}}/>
+                <div id="learnmore-main" style={portrait ? {width: '100vw'} : {height: '100vh'}}>
+                    {!portrait ? <img src={this.template["main-image"]} height="100%" style={{opacity:'0.5'}}/> : <img src={this.template["main-image"]} width="100%" style={{opacity:'0.5'}}/>}
                     <div id="learnmore-title">{this.template["title"]}</div>
                     <div id="learnmore-subtitle">{this.template["subtitle"]}</div>
                     <button id="signup-button" className="btn btn-lg btn-success" onClick={this.goToSignUp}>
                         Sign Up as a {this.template["name"]}
                     </button>
+                    <img src="assets/arrow.svg" className="down-arrow-svg" id="scroll-down"/>
                 </div>
                 <div className="horizontal-spacer"></div>
                 <div id="learnmore-features">
