@@ -36,6 +36,7 @@ export class Contact extends React.Component{
                 </div>
                     <button className="btn btn-lg btn-success" id = "submit">Submit</button>
                 <div className="horizontal-spacer"></div>
+                <div className="horizontal-spacer"></div>
                 <Footer/>
             </div>
         );

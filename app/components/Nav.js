@@ -103,8 +103,7 @@ export class Nav extends React.Component{
 		  						<br/><br/>
 		  						<div className="popnavi-link"><a href="/aboutus">About</a></div>
 		  						<div className="popnavi-link"><a href="/contact">Contact</a></div>
-		  						<div className="popnavi-link"><a href="/">News</a></div>
-		  						<div className="popnavi-link"><a href="/login">Login</a></div>
+		  						<div className="popnavi-link"><a href="http://www.foodloveservices.com/users/sign_in">Login</a></div>
 	  						</div>
 	  					</div>
 	  				</div>
@@ -123,8 +122,7 @@ export class Nav extends React.Component{
 	  				<div className={tabHolderClass.join(" ")} id="navbar-tab-holder-right">
 		  				<div className="navbar-tab navbar-tab-right"><a href="/aboutus">About</a></div>
 		  				<div className="navbar-tab navbar-tab-right"><a href="/contact">Contact</a></div>
-		  				<div className="navbar-tab navbar-tab-right"><a href="/">News</a></div>
-		  				<div className="navbar-tab navbar-tab-right"><a href="/login">Login</a></div>
+		  				<div className="navbar-tab navbar-tab-right"><a href="http://www.foodloveservices.com/users/sign_in">Login</a></div>
 	  				</div>
   				</div>
   				);

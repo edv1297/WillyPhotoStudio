@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Nav } from "./Nav";
 import { Footer } from './Footer';
+import { NewsletterSignup } from './Landing';
 
 export const Producer = (props) => {
     return (<LearnMore type={"producer"}/>);
@@ -113,6 +114,10 @@ export class LearnMore extends React.Component{
         this.template = LearnMoreTemplates[this.type];
     }
 
+    goToSignUp(){
+        window.location.href = "http://www.foodloveservices.com/users/sign_up";
+    }
+
     render(){
         return(
             <div>
@@ -121,7 +126,9 @@ export class LearnMore extends React.Component{
                     <img src={this.template["main-image"]} width="100%" style={{opacity:'0.5'}}/>
                     <div id="learnmore-title">{this.template["title"]}</div>
                     <div id="learnmore-subtitle">{this.template["subtitle"]}</div>
-                    <div id="signup-button" className="btn btn-lg btn-success">Sign Up as a {this.template["name"]}</div>
+                    <button id="signup-button" className="btn btn-lg btn-success" onClick={this.goToSignUp}>
+                        Sign Up as a {this.template["name"]}
+                    </button>
                 </div>
                 <div className="horizontal-spacer"></div>
                 <div id="learnmore-features">
@@ -160,8 +167,12 @@ export class LearnMore extends React.Component{
                 <div className="horizontal-spacer"></div>
                 <div className="horizontal-spacer"></div>
                 <div id="signup-big">
-                    <button id="signup-big-button" className="btn btn-lg btn-success">Sign Up Now!</button>
+                    <button id="signup-big-button" className="btn btn-lg btn-success" onClick={this.goToSignUp}>Sign Up Now!</button>
                 </div>
+                <div className="horizontal-spacer"></div>
+                <div className="horizontal-spacer"></div>
+                <NewsletterSignup />
+                <div className="horizontal-spacer"></div>
                 <div className="horizontal-spacer"></div>
                 <Footer />
             </div>

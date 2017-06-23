@@ -60,7 +60,7 @@ export const MainLinks = (props) => {
 export const NewsletterSignup = (props) => {
     if(window.innerWidth < 700){
         return(
-            <div className="blurb-box" style={{}}>
+            <div className="blurb-box">
                     <div className="header-title" style={{marginTop: '2vw', fontSize: '6.6vw'}}>
                     Would you like to hear from us?
                 </div>
