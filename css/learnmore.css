@@ -69,10 +69,10 @@
 			.feature-icon{
 				position: relative;
 				float: left;
-				max-height: 120px;
-				max-width: 120px;
+				height: 7vw;
+				width: 7vw;
 				margin-top: 20px;
-				margin-left: calc(12.5vw - 60px);
+				margin-left: calc(12.5vw - 3.5vw);
 				/*background-color: pink;*/
 			}
 

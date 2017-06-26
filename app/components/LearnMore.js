@@ -24,23 +24,23 @@ const LearnMoreTemplates = {
         "subtitle": <span>Spend less time managing and<br/> more time doing what you love.</span>,
         "features":{
             "1": {
-                "icon": "globe.png",
-                "heading": <span>Increase market presence</span>,
+                "icon": "globe.svg",
+                "heading": <span>Increase<br/>market presence</span>,
                 "text": <span>Expand your operations with our user base. Connect with buyers of all sizes on our platform: universities, restaurants, hotels - you name it. Find distributors and food hubs that can deliver your products to customers you can’t reach. Grow your customer network in half the time.</span>
             },
             "2": {
-                "icon": "search.png",
-                "heading": <span>Your best foot forward</span>,
+                "icon": "search.svg",
+                "heading": <span>Your best<br/>foot forward</span>,
                 "text": <span>Break through the background noise with personalized profile pages. Upload photos, videos, and logos. Go the extra mile with our professional photography team. Show off certifications, awards, and any newsworthy info. Link to social media and personal webpages. Build your brand. Tell your story.</span>
             },
             "3": {
-                "icon": "checklist.png",
-                "heading": <span>Organized and up-to-date</span>,
+                "icon": "checklist.svg",
+                "heading": <span>Organized and<br/>up-to-date</span>,
                 "text": "Your inventory can change in instant – we’re here to keep you organized. Send notifications on product changes simultaneously to your entire network. Change details of all your outbound orders."
             },
             "4": {
-                "icon": "mobile.png",
-                "heading": <span>On the go. Anywhere.</span>,
+                "icon": "mobile.svg",
+                "heading": <span>On the go.<br/>Anywhere.</span>,
                 "text": <span>You don’t need to leave the field to get the job done. FoodLove offers smartphone and tablet compatibility for working on the go. Take pictures you can upload while out in the field.</span>
             }
         }
@@ -52,23 +52,23 @@ const LearnMoreTemplates = {
         "subtitle": <span>With FoodLove, buying local is<br/>convenient, efficient, and all in one place.</span>,
         "features":{
             "1": {
-                "icon": "gears.png",
-                "heading": <span>Accelerated productivity</span>,
+                "icon": "accel.svg",
+                "heading": <span>Accelerated<br/>productivity</span>,
                 "text": <span>Go from phone calls, emails, and sticky notes to an intelligent platform that fits your needs. Save time and let buyers place orders through our site. Organize and automate your inbound and outbound orders. Upload excel sheets to update your available products en masse. Manage all your buyer and producer accounts all in one place.</span>
             },
             "2": {
-                "icon": "globe.png",
+                "icon": "globe.svg",
                 "heading": <span>Expand your<br/>customer network</span>,
                 "text": <span>Farms want to find new sales channels. Buyers want to find new sources. We bring them all to you. Send invitations to connect to nearby farms and buyers and begin working with your new partners immediately.</span>
             },
             "3": {
-                "icon": "checklist.png",
-                "heading": <span>Stay organized</span>,
+                "icon": "checklist.svg",
+                "heading": <span>Stay<br/>organized</span>,
                 "text": <span>Orders can change in an instant – we’re here to keep you at your A game. Update invoices and orders from anywhere. Send automatic alerts to buyers and producers. Keep a final copy of everything online. No sweat.</span>
             },
             "4": {
-                "icon": "mobile.png",
-                "heading": <span>On the go. Anywhere.</span>,
+                "icon": "mobile.svg",
+                "heading": <span>On the go.<br/>Anywhere.</span>,
                 "text": <span>You don’t need your desktop to get the job done. FoodLove offers smartphone and tablet compatibility so you can work when you’re and about. Have customers sign invoices on your iPad. Send notifications from your phone. Make mobile customer updates. You’re always on the go. Your business should be too.</span>
             }
         }
@@ -80,22 +80,22 @@ const LearnMoreTemplates = {
         "subtitle": <span>Simple, powerful tools that make working with<br/>buyers and producers efficient and effective.</span>,
         "features":{
             "1": {
-                "icon": "mobile.png",
-                "heading": <span>On the go. Anywhere.</span>,
+                "icon": "mobile.svg",
+                "heading": <span>On the go.<br/>Anywhere.</span>,
                 "text": <span>Ditch the phone calls and sticky notes and order everything you need all in one place. Search through all available products near you. Place multiple orders at once. Have everything delivered directly to your door.</span>
             },
             "2": {
-                "icon": "checklist.png",
-                "heading": <span>Stay Organized</span>,
+                "icon": "checklist.svg",
+                "heading": <span>Stay<br/>Organized</span>,
                 "text": <span>Your orders can change in instant – we’re here to keep you in the loop. Receive notifications on your order status and changes. View details of all your orders at any stage: draft, submitted, or delivered. Everything you need to know – in real time.</span>
             },
             "3": {
-                "icon": "location.png",
+                "icon": "location.svg",
                 "heading": <span>Know where your<br/>food comes from</span>,
                 "text": <span>The food you’re ordering is one of a kind. Explore producer profiles to learn about the people behind your food. Check out certifications and awards. Dig deeper with our multimedia gallery. Find out how you’ve reduced your carbon footprint by buying locally.</span>
             },
             "4": {
-                "icon": "search.png",
+                "icon": "search.svg",
                 "heading": <span>Find products you and<br/>your customers will love</span>,
                 "text": <span>Discover what your local artisans and distributors have to offer. Connect with producers and distributors that meet your business needs. Browse through featured products and foods to inspire your next dish.</span>
             }
