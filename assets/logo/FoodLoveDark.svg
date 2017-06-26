@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="772" height="200" viewBox="0 0 772 200">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 150px;
+        text-anchor: middle;
+        fill: #171717;
+        font-family: Avenir;
+        font-weight: 800;
+      }
+
+      .cls-2 {
+        fill: #b51e1e;
+      }
+    </style>
+  </defs>
+  <text id="FoodLove" class="cls-1" x="383.039" y="152.043"><tspan x="383.039">Food<tspan class="cls-2">Love</tspan></tspan></text>
+</svg>

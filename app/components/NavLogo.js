@@ -13,7 +13,7 @@ export default class NavLogo extends React.Component{
 		};
 
 		this.updateClasses(this.state.collapsed);
-		this.updateLogoSize(this.state.collapsed);
+		// this.updateLogoSize(this.state.collapsed);
 	}
 
 	collapse(){
@@ -45,7 +45,7 @@ export default class NavLogo extends React.Component{
 	}
 
 	handleResize(){
-		this.updateLogoSize(this.state.collapsed);
+		// this.updateLogoSize(this.state.collapsed);
 		this.setState({});
 	}
 
@@ -53,7 +53,11 @@ export default class NavLogo extends React.Component{
 		var logoHeight = 0;
 
 		if(!collapsed && this.state.type == "center"){
+			//if(this.state.logoHeight<=50){
 			logoHeight = window.innerWidth * 0.07;
+			//
+			// }else return;
+
 		}else{
 			logoHeight = 50;
 		}
@@ -85,11 +89,11 @@ export default class NavLogo extends React.Component{
 	render(){
 		var classes = "";
 
-		const imageColor = this.state.collapsed ? "black" : "white";
+		const imageColor = this.state.collapsed ? "Dark" : "Light";
 
 		return (
 			<div id="logo-main" className={this.state.classes.join(" ")}>
-				<a href="/"><img src={"assets/logo" + imageColor + ".png"} height={this.state.logoHeight}/></a>
+				<a href="/"><img src={"assets/logo/FoodLove" + imageColor + ".svg"} height="100%"/></a>
 			</div>
 		);
 	}

@@ -64,8 +64,7 @@
         width: 7vw;
         float: left;
         position: relative;
-        margin-right: 1vw;
-
+        margin-right: .8vw;
     }
 
 
@@ -97,14 +96,11 @@
     }
 
     #bio-picture{
-        height: 33.4vw;
-        width: 33.4vw;
-        opacity: 0.5;
-        filter: alpha(opacity=50);
-        position: sticky;
+        width: 33vw;
+        height: 57.42vw;
         float: right;
-        margin-right: 5vw;
-        top: 40px;
+        margin-right: 2vw;
+        margin-top: 3vw;
     }
 
     .customer-type-description{
