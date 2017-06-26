@@ -130,14 +130,6 @@ export class Nav extends React.Component{
   	}
   }
 
-
-// <div className="navbar-tab" style={{left: 780 + 'px'}}>link</div>
-// 				<div className="navbar-tab" style={{left: 900 + 'px'}}>link</div>
-// 				<div className="navbar-tab" style={{left: 1020 + 'px'}}>link</div>
-
-
-// <img height="30" width="150" src="logowhite.png" id="logo-main-img"/>
-
 function startAnimation(object, keyframes, finishedState, duration){
 	object.state.classes.push(keyframes);
 	object.setState({

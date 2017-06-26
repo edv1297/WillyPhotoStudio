@@ -72,17 +72,31 @@ div#logo-main{
 
 div.logo-centered-larger{
     height: 7vw;
-    width: 21vw;
-    left: calc(50vw - 10.5vw);
+    max-height: 100px;
+    width: 25.2vw;
+    left: calc(50vw - 12.6vw);
     top: calc(50% - 3.5vw);
+    text-align: center;
 }
 
+@media only screen and (min-width : 1500px){
+    div.logo-centered-larger{
+        height: 100px;
+        max-height: 100px;
+        width: 25.2vw;
+        left: calc(50vw - 12.6vw);
+        top: calc(50% - 50px);
+        text-align: center;
+    }
+}
 div.logo-centered-shrunken{
     left: calc(50vw - 75px);
 }
 
 div.logo-left{
     left: 3vw;
+    height: 50px;
+
 }
 
 div.logo-left-larger{
