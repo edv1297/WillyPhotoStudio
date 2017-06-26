@@ -3,7 +3,6 @@ FoodLove LLC 2017 */
 
 import React from 'react';
 import { Nav } from "./Nav";
-import {Footer} from './Footer';
 
 export class Login extends React.Component{
     constructor(props){
