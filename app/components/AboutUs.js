@@ -6,7 +6,7 @@ import { Footer } from './Footer';
 export class AboutUs extends React.Component{
     constructor(props){
         super(props);
-        window.document.body.style.backgroundColor = "#232428";
+        window.document.body.style.backgroundColor = "#f7f7f7";
     }
 
     render(){
@@ -17,15 +17,15 @@ export class AboutUs extends React.Component{
                 <div className="blurb-box" style={{height: 'auto'}}>
                     <div id="aboutus-title">About Us</div>
                     <div id="aboutus-image" style={{display: isMobile() ? "none" : "block"}}>
-                        <img src="assets/team.jpg" style={{width: '100%'}}/>
+                        <img src="assets/logo/FoodLoveDarkStraw.png" style={{width: '100%'}}/>
                     </div>
                     <div id="aboutus-text">
                           <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                          </p>
+                            FoodLove was founded in August of 2016 and based in Williamstown, Massachusetts. We have created a platform that merges the gap between the local food community and retailers. Our platform facilitates the interactions between producers and distributors with hopes of promoting sustainable food practices.
+                            </p>
                           <br/>
                           <p>
-                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                            Whether you want a pound of strawberries, a clove of garlic, or a granola bar, FoodLove facilitates the connection from producers to retailers.
                           </p>
                     </div>
                 </div>
@@ -35,9 +35,9 @@ export class AboutUs extends React.Component{
                     <div className="person-profile">
                         <img src="assets/aboutus/joe-headshot.png" className="founder-profile-pic" />
                         <div className="profile-name">Joe Bergeron</div>
-                        <div className="profile-name profile-title">Co-founder, Technology and Backend Development</div>
+                        <div className="profile-name profile-title">Co-founder, Technology <br/>Backend Development</div>
                         <div className="profile-description">
-                            Makes a mean croissant.
+                             He makes a crunchy croissant.
                         </div>
                     </div>
                     <div className="person-profile">
@@ -53,7 +53,7 @@ export class AboutUs extends React.Component{
                         <div className="profile-name">Michael Wong</div>
                         <div className="profile-name profile-title">Software Developer & <br />Web Design</div>
                         <div className="profile-description">
-                            Makes a mean chocolate croissant
+                        In-N-Out Connoisseur.
                         </div>
                     </div>
                     <div className="person-profile">
@@ -61,7 +61,7 @@ export class AboutUs extends React.Component{
                         <div className="profile-name">Eddy Varela</div>
                         <div className="profile-name profile-title">Software Developer &<br/> Photography</div>
                         <div className="profile-description">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                            Coffee is his lifeline.
                         </div>
                     </div>
                 </div>
