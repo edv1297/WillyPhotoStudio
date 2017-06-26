@@ -17,7 +17,7 @@ export class AboutUs extends React.Component{
                 <div className="blurb-box" style={{height: 'auto'}}>
                     <div id="aboutus-title">About Us</div>
                     <div id="aboutus-image" style={{display: isMobile() ? "none" : "block"}}>
-                        <img src="assets/logo/FoodLoveDarkStraw.png" style={{width: '100%'}}/>
+                        <img src="assets/logo/FoodLoveDarkStrawberry.png" style={{width: '100%'}}/>
                     </div>
                     <div id="aboutus-text">
                           <p>
