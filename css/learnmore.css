@@ -15,15 +15,16 @@
 	#learnmore-title{
 		font-size: 4vw;
 		position: absolute;
-		top: 13vw;
+		top: 15vw;
 		left: 10vw;
 		color: white;
+		line-height: 5vw;
 	}
 
 	#learnmore-subtitle{
 		position: absolute;
 		width: auto;
-		top: 26vw;
+		top: 27vw;
 		left: 10vw;
 		color:white;
 		font-size: 2vw;
@@ -31,7 +32,7 @@
 
 	button#signup-button{
 		position: absolute;
-		top: 35vw;
+		top: 37vw;
 		left: 20vw;
 		text-align: center;
 		height: 4vw;

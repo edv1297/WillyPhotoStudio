@@ -25,12 +25,12 @@ const LearnMoreTemplates = {
         "features":{
             "1": {
                 "icon": "globe.svg",
-                "heading": <span>Increase<br/>market presence</span>,
+                "heading": <span>Increase your<br/>market presence</span>,
                 "text": <span>Expand your operations with our user base. Connect with buyers of all sizes on our platform: universities, restaurants, hotels - you name it. Find distributors and food hubs that can deliver your products to customers you can’t reach. Grow your customer network in half the time.</span>
             },
             "2": {
                 "icon": "search.svg",
-                "heading": <span>Your best<br/>foot forward</span>,
+                "heading": <span>Put your best<br/>foot forward</span>,
                 "text": <span>Break through the background noise with personalized profile pages. Upload photos, videos, and logos. Go the extra mile with our professional photography team. Show off certifications, awards, and any newsworthy info. Link to social media and personal webpages. Build your brand. Tell your story.</span>
             },
             "3": {
@@ -193,7 +193,6 @@ export class LearnMore extends React.Component{
                 <NewsletterSignup />
                 <div className="horizontal-spacer"></div>
                 <div className="horizontal-spacer"></div>
-                <Footer />
             </div>
         );
     }

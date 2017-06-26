@@ -93,7 +93,7 @@ export default class NavLogo extends React.Component{
 
 		return (
 			<div id="logo-main" className={this.state.classes.join(" ")}>
-				<a href="/"><img src={"assets/logo/FoodLove" + imageColor + ".svg"} height="100%"/></a>
+				<a href="/"><img src={"assets/logo/FoodLove" + imageColor + ".svg"} width="100%"/></a>
 			</div>
 		);
 	}

@@ -24,7 +24,6 @@ export const Landing = () => {
             <NewsletterSignup/>
             <div className="horizontal-spacer"/>
             <div className="horizontal-spacer"/>
-            <Footer/>
         </div>
     );
 
@@ -92,24 +91,30 @@ export const CustomerTypeSelection = (props) => {
 
     return(
        <div className="blurb-box" style={{height: 'auto'}}>
-          <div className="customer-type-button">
-          <img src = "./assets/icons/wheat.png" className = "icon" id= "producer-icon"/>
-              <a href="/producer"><img src = "./assets/frontFacing/producer.png" width="100%"/></a>
-              <div className = "customer-type-main-blurb" > Selling Products?</div>
-              <div className = "customer-type-description" id = 'producer-blurb'>Learn more about our producers</div>
-          </div>
-          <div className="customer-type-button">
-          <img src = "./assets/icons/truck.png" className = "icon"/>
-              <a href="/producer"><img src = "./assets/frontFacing/distributor.png" width="100%"/></a>
-               <div className = "customer-type-main-blurb" id = 'distributor'> Logistical Services?</div>
-               <div className = "customer-type-description" id = 'dist-blurb'>Learn more about our distributors</div>
-          </div>
-          <div className="customer-type-button">
-            <img src = "./assets/icons/chefHat.png" className = "icon"/>
-              <a href="/producer"><img src = "./assets/frontFacing/buyer.png" width="100%"/></a>
-              <div className = "customer-type-main-blurb" id = 'buyer'> Retailer or Institution?</div>
-              <div className = "customer-type-description" id = 'buyer-blurb'>Learn more about our buyers</div>
-          </div>
+          <a href="/producer">
+            <div className="customer-type-button">
+            <img src = "./assets/icons/wheat.svg" className = "icon"/>
+                <img src = "./assets/frontFacing/producer.png" width="100%"/>
+                <div className = "customer-type-main-blurb">Selling Products?</div>
+                <div className = "customer-type-description">Click to learn more</div>
+            </div>
+          </a>
+          <a href="/distributor">
+              <div className="customer-type-button">
+              <img src = "./assets/icons/truck.svg" className = "icon"/>
+                  <img src = "./assets/frontFacing/distributor.png" width="100%"/>
+                   <div className = "customer-type-main-blurb">Logistical Services?</div>
+                   <div className = "customer-type-description">Click to learn more</div>
+              </div>
+          </a>
+          <a href="/buyer">
+              <div className="customer-type-button">
+                <img src = "./assets/icons/hat.svg" className = "icon"/>
+                  <img src = "./assets/frontFacing/buyer.png" width="100%"/>
+                  <div className="customer-type-main-blurb">Retailer or Institution?</div>
+                  <div className="customer-type-description">Click to learn more</div>
+              </div>
+          </a>
        </div>
     );
 
@@ -127,7 +132,7 @@ export const Bio = (props) => {
             <div id="bio-body">
               <div className="bio-content">
                   <div className="bio-icon">
-                      <img src="assets/icons/wheat.png" height="100%"/>
+                      <img src="assets/icons/wheat.svg" height="100%"/>
                   </div>
                   <div className = "section-header">
                     We love local food.
@@ -140,10 +145,10 @@ export const Bio = (props) => {
               </div>
               <div className="bio-content">
                   <div className="bio-icon" id = 'truck-icon'>
-                      <img src="assets/icons/truck.png" height="100%"/>
+                      <img src="assets/icons/truck.svg" height="100%"/>
                   </div>
                   <div className = "section-header">
-                    {!isMobile() ? <span>Our platform revolutionizes<br/>the supply chain.</span> : <span>Our platform<br/>revolutionizes the<br/>supply chain.</span>}
+                    {!isMobile() ? <span>Our platform revolutionizes<br/>the supply chain.</span> : <span>Our platform revolutionizes<br/>the supply chain.</span>}
                   </div>
                   <div className = "bio-text">
                     We gather purveyors, artisans, and distributors of local
@@ -154,10 +159,10 @@ export const Bio = (props) => {
               </div>
               <div className="bio-content">
                   <div className="bio-icon">
-                      <img src="assets/icons/hand.png" height="100%"/>
+                      <img src="assets/icons/power.svg" height="100%"/>
                   </div>
                   <div className = "section-header">
-                  {!isMobile() ? <span>At FoodLove, we’re here to<br/>empower the local food community.</span> : <span>At FoodLove, we’re<br/>here to empower<br/>the local food community.</span>}
+                  {!isMobile() ? <span>At FoodLove, we’re here to<br/>empower the local food community.</span> : <span>At FoodLove, we’re here to empower the local food community.</span>}
 
                   </div>
                   <div className = "bio-text">
@@ -171,7 +176,7 @@ export const Bio = (props) => {
                       <img src="assets/icons/heart.png" height="100%"/>
                   </div>
                   <div className = "section-header">
-                    {!isMobile() ? <span>Eat food you can feel good about.<br/><br/>Eat food you can love.</span> : <span>Eat food you can <br/>feel good about.<br/><br/>Eat food you can love.</span>}
+                    {!isMobile() ? <span>Eat food you can feel good about.<br/>Eat food you can love.</span> : <span>Eat food you can feel good about. Eat food you can love.</span>}
 
                   </div>
               </div>

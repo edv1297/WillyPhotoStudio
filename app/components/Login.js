@@ -60,7 +60,6 @@ export class Login extends React.Component{
                         </div>
                         {body} /* renders out the body that is neccessary*/
                         <div className="horizontal-spacer"></div>
-                        <Footer/>
                     </div>
             );
         }

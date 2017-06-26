@@ -71,31 +71,30 @@ div#logo-main{
 }
 
 div.logo-centered-larger{
-    height: 7vw;
-    max-height: 100px;
     width: 25.2vw;
+    max-width: 380px;
     left: calc(50vw - 12.6vw);
     top: calc(50% - 3.5vw);
     text-align: center;
 }
 
-@media only screen and (min-width : 1500px){
-    div.logo-centered-larger{
-        height: 100px;
-        max-height: 100px;
-        width: 25.2vw;
-        left: calc(50vw - 12.6vw);
-        top: calc(50% - 50px);
-        text-align: center;
-    }
-}
 div.logo-centered-shrunken{
     left: calc(50vw - 75px);
 }
 
+@media only screen and (min-width : 1500px){
+    div.logo-centered-larger{
+        height: 100px;
+        width: 380px;
+        left: calc(50vw - 190px);
+        top: calc(50% - 50px);
+        text-align: center;
+    }
+}
+
 div.logo-left{
     left: 3vw;
-    height: 50px;
+    width: 175px;
 
 }
 
@@ -106,11 +105,10 @@ div.logo-left-larger{
 }
 
 div.logo-shrunken{
-    height: 50px;
+    height: auto;
     width: 150px;
-    top: calc(50% - 25px);
+    top: 6px;
 }
-
 
 
 div#navbar-tab-holder-left{

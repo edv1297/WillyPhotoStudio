@@ -34,10 +34,8 @@ export class Contact extends React.Component{
                         <textarea placeholder="Message" className="contact-textarea"/>
                     </div>
                 </div>
-                    <button className="btn btn-lg btn-success" id = "submit">Submit</button>
-                <div className="horizontal-spacer"></div>
-                <div className="horizontal-spacer"></div>
-                <Footer/>
+                <button className="btn btn-lg btn-success" id = "submit">Submit</button>
+                <div className="horizontal-spacer" />
             </div>
         );
     }

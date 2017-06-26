@@ -10,6 +10,7 @@ import { Producer } from "./components/LearnMore";
 import { Distributor } from "./components/LearnMore";
 import { Buyer } from "./components/LearnMore";
 import { Login } from "./components/Login";
+import { Footer } from "./components/Footer";
 
 
 export const App = (props) => {
@@ -31,3 +32,4 @@ export const App = (props) => {
 }
 
 render(<App/>, window.document.getElementById("app"));
+render(<Footer/>, window.document.getElementById("foot"));
