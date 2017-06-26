@@ -24,7 +24,7 @@ Include this in a `package.json` file
     
 `npm install --save-dev babel-core babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-2 webpack webpack-dev-server`
 
-# make a webpack.config.js
+# Make a webpack.config.js and paste this in
 
 var webpack = require('webpack');
 var path = require('path');
@@ -54,3 +54,15 @@ var config = {
 };
 
 module.exports = config;
+
+## Then create a folder called `dist` that is empty
+
+# Now you should have 
+
+* package.json
+* node_modules/
+* webpack.config.js
+* dist/
+
+# Clone this repository into this folder and name it `client`
+## From the console run `npm start`
