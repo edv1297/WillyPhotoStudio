@@ -37,13 +37,13 @@ export class AboutUs extends React.Component{
                         <div className="profile-name">Joe Bergeron</div>
                         <div className="profile-name profile-title">Co-founder, Technology and Backend Development</div>
                         <div className="profile-description">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                            Makes a mean croissant.
                         </div>
                     </div>
                     <div className="person-profile">
                         <img src="assets/aboutus/mia-headshot.png" className="founder-profile-pic" />
                         <div className="profile-name">Mia Gancayco</div>
-                        <div className="profile-name profile-title">Co-founder, Business Development, Marketing, and Brand</div>
+                        <div className="profile-name profile-title">Co-founder, Marketing, <br/>Business Development</div>
                         <div className="profile-description">
                             She makes a mean carrot cake.
                         </div>
@@ -51,7 +51,7 @@ export class AboutUs extends React.Component{
                     <div className="person-profile">
                         <img src="assets/aboutus/michael-headshot.jpg" className="dev-profile-pic" />
                         <div className="profile-name">Michael Wong</div>
-                        <div className="profile-name profile-title">Software Developer & Design</div>
+                        <div className="profile-name profile-title">Software Developer & <br />Web Design</div>
                         <div className="profile-description">
                             Makes a mean chocolate croissant
                         </div>
@@ -59,7 +59,7 @@ export class AboutUs extends React.Component{
                     <div className="person-profile">
                         <img src="assets/aboutus/eddy-headshot.jpg" className="dev-profile-pic" />
                         <div className="profile-name">Eddy Varela</div>
-                        <div className="profile-name profile-title">Software Developer & Photography</div>
+                        <div className="profile-name profile-title">Software Developer &<br/> Photography</div>
                         <div className="profile-description">
                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
                         </div>

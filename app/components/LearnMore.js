@@ -21,7 +21,7 @@ const LearnMoreTemplates = {
         "name": "Producer",
         "main-image": "assets/learnMore/producer.jpg",
         "title": <span>You have a farm to run. <br/> Let us take care of business.</span>,
-        "subtitle": <span>Spend less time managing and more time doing what you love.</span>,
+        "subtitle": <span>Spend less time managing and<br/> more time doing what you love.</span>,
         "features":{
             "1": {
                 "icon": "globe.png",
@@ -77,7 +77,7 @@ const LearnMoreTemplates = {
         "name": "Buyer",
         "main-image": "assets/learnMore/buyers.jpg",
         "title": <span>You have a business to run.<br/>We’ve got your back.</span>,
-        "subtitle": <span>Simple, powerful tools that make working with buyers and producers efficient and effective.</span>,
+        "subtitle": <span>Simple, powerful tools that make working with<br/>buyers and producers efficient and effective.</span>,
         "features":{
             "1": {
                 "icon": "mobile.png",
@@ -130,8 +130,12 @@ export class LearnMore extends React.Component{
         window.location.href = "http://www.foodloveservices.com/users/sign_up";
     }
 
+    scrollToContent(){
+        window.scroll(0, window.innerHeight);
+    }
+
     render(){
-        const portrait = window.innerWidth / window.innerHeight > 1.97 && !isMobile();
+        const portrait = (window.innerWidth / window.innerHeight > 1.97 || window.innerWidth / window.innerHeight < 1.5) && !isMobile();
 
         return(
             <div>
@@ -143,7 +147,7 @@ export class LearnMore extends React.Component{
                     <button id="signup-button" className="btn btn-lg btn-success" onClick={this.goToSignUp}>
                         Sign Up as a {this.template["name"]}
                     </button>
-                    <img src="assets/arrow.svg" className="down-arrow-svg" id="scroll-down"/>
+                    {!portrait ? <img src="assets/arrow.svg" className="down-arrow-svg" id="scroll-down" onClick={this.scrollToContent}/> : <span />}
                 </div>
                 <div className="horizontal-spacer"></div>
                 <div id="learnmore-features">

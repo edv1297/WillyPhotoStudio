@@ -15,8 +15,11 @@
 .person-profile{
 	width: 25vw;
 	float: left;
-	min-width: 200px;
-	margin-top: 50px;
+	min-width: 100px;
+	max-width: 250px;
+	/*margin-top: 50px;*/
+	margin-left: 1vw;
+	margin-top: 40px;
 }
 
 img.dev-profile-pic{
@@ -41,7 +44,7 @@ img.founder-profile-pic{
 }
 
 .profile-title{
-	font-size: 20px;
+	font-size: 15px;
 	margin-top: 0px;
 }
 
@@ -50,7 +53,6 @@ img.founder-profile-pic{
 		width: 25vw;
 		float: left;
 		min-width: 200px;
-		margin-bottom: 20px;
 	}
 
 	#aboutus-text{
@@ -88,10 +90,10 @@ img.founder-profile-pic{
 
 @media only screen and (max-width : 770px){
     .person-profile{
-		width: 100vw;
-		float: left;
+		margin-left: calc(50vw - 200px / 2);
 		min-width: 200px;
-		margin-bottom: 20px;
+		max-height: 500px
+		/*margin-bottom: 20px;*/
 	}
 
 	#aboutus-text{
@@ -116,8 +118,8 @@ img.founder-profile-pic{
 	}
 
 	.profile-description{
-		width: 80vw;
-		margin-left: 10vw;
+		width: 80%;
+		margin-left: 10%;
 		float: left;
 		color: white;
 		margin-top: 20px;

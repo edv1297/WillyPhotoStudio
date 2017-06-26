@@ -54,10 +54,10 @@ export class Nav extends React.Component{
 
   	handleScroll(){
   		if(!this.state.collapsed && window.scrollY >= this.triggerScrollTop){
-  			startAnimation(this, "navbar-collapse-anim", ["navigator", "navigator-small", "drop-shadow"], 500);
+  			startAnimation(this, "navbar-collapse-anim", ["navigator", "navigator-small", "drop-shadow"], 400);
   			this.logo.collapse();
   		}else if(this.state.collapsed && window.scrollY < this.triggerScrollTop){
-  			startAnimation(this, "navbar-open-anim", ["navigator", "navigator-full"], 500);
+  			startAnimation(this, "navbar-open-anim", ["navigator", "navigator-full"], 400);
   			this.logo.expand();
   		}else return;
 
