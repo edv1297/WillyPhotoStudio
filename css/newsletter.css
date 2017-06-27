@@ -1,0 +1,75 @@
+
+input#first-name-input{
+	position: relative;
+	width: 300px;
+	height: 40px;
+	margin-top: 20px;
+	margin-left: calc(50vw - 150px);
+	background-color: "blue";
+	font-size: 20px;
+}
+input#last-name-input{
+	position: relative;
+	width: 300px;
+	height: 40px;
+	margin-top: 20px;
+	margin-left: calc(50vw - 150px);
+	background-color: "blue";
+	font-size: 20px;
+}
+.news-letter-signup{
+    color: black;
+}
+
+textarea, input {
+	border: none;
+    background-color: transparent;
+	border-bottom: solid;
+	border-bottom-width: 2px;
+	border-radius: 2px;
+	text-align: center;
+	resize: none;
+}
+
+textarea:focus, input:focus{
+	outline: none;
+	border-color: #13E0F4;
+}
+@@media only screen and (min-width : 771px) {
+    input#email-input{
+    	position: relative;
+    	width: 300px;
+        margin-left: 30vw;
+    	height: 40px;
+    	margin-top: 20px;
+    	background-color: "orange";
+    	font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width : 770px){
+
+#header-title{
+    position: relative;
+    text-align: center;
+    height: 30vw;
+    margin-left: 5vw;
+    margin-right:5vw;
+    width: 90vw;
+}
+
+textarea, input {
+	border: none;
+    background-color: transparent;
+	border-bottom: solid;
+	border-bottom-width: 2px;
+	border-radius: 2px;
+	text-align: center;
+	resize: none;
+}
+
+textarea:focus, input:focus{
+	outline: none;
+	border-color: #13E0F4;
+}

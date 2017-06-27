@@ -1,13 +1,15 @@
 import React from "react";
 
 import { Nav } from "./Nav";
+import { Footer } from "./Footer";
 
 export const Landing = () => {
 
-    window.document.body.style.backgroundColor = "#232428";
+    window.document.body.style.backgroundColor = "#951919";
 
     return(
         <div>
+            <link rel = "stylesheet" type = "text/css" href = 'css/landing.css'/>
             <Nav collapsable={!isMobile()}/>
             <div id="main-image" className="drop-shadow">
                 <img src={!isMobile() ? "assets/frontFacing/farmImage.png" : "assets/frontFacing/gallery-zoomin.png"} width="100%"/>
@@ -54,36 +56,6 @@ export const MainLinks = (props) => {
           </div>
        </div>
     );
-}
-
-export const NewsletterSignup = (props) => {
-    if(window.innerWidth < 700){
-        return(
-            <div className="blurb-box">
-                    <div className="header-title" style={{marginTop: '2vw', fontSize: '6.6vw'}}>
-                    Would you like to hear from us?
-                </div>
-
-                <div className="header-title" style={{marginTop: '16vw', fontSize: '4vw'}}>
-                    Submit your email address for our newsletter
-                </div>
-                <input id="email-input" placeholder="yourname@mail.com"/>
-            </div>
-        );
-    }else{
-        return(
-            <div className="blurb-box">
-                    <div className="header-title" style={{marginTop: '30px', fontSize: '40px'}}>
-                    Would you like to hear from us?
-                </div>
-
-                <div className="header-title" style={{marginTop: '90px', fontSize: '20px'}}>
-                    Submit your email address for our newsletter
-                </div>
-                <input id="email-input" placeholder="yourname@mail.com"/>
-            </div>
-        );
-    }
 }
 
 export const CustomerTypeSelection = (props) => {

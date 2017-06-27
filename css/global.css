@@ -48,12 +48,6 @@ body {
 	width: 100vw;
 }
 
-.header-title{
-    color: white;
-    position: absolute;
-    width: 100vw;
-    text-align: center;
-}
 
 .navbar-replace{
 	height: 100px;
@@ -80,28 +74,22 @@ img.down-arrow-svg{
 	height: 25px;
 }
 
-textarea, input {
-	border: none;
-	color: var(--white);
-	border-bottom: solid;
-	border-bottom-width: 2px;
-	border-radius: 2px;
-	text-align: center;
-	background-color: #7A7B7E;
-	resize: none;
-}
-
-textarea:focus, input:focus{
-	outline: none;
-	border-color: #13E0F4;
-}
-
 @media only screen and (min-width : 771px){
     .horizontal-spacer{
 	    width: 100vw;
 	    float: left;
 	    height: 50px;
 	}
+}
+
+input#email-input{
+	position: relative;
+	width: 300px;
+    margin-left: 30vw;
+	height: 40px;
+	margin-top: 20px;
+	background-color: "orange";
+	font-size: 20px;
 }
 
 @media only screen and (max-width : 770px){
