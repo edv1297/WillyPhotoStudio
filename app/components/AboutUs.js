@@ -1,17 +1,18 @@
 import React from 'react';
 
 import { Nav } from "./Nav";
-import { Footer } from './Footer';
 
 export class AboutUs extends React.Component{
     constructor(props){
         super(props);
+        this.state = {stylePath: 'css/aboutus.css'};
         window.document.body.style.backgroundColor = "#f7f7f7";
     }
 
     render(){
         return(
             <div>
+            <link rel = "stylesheet" type = "text/css" href = 'css/aboutus.css'/>
                 <Nav collapsable={false}/>
                 <div className="navbar-replace"></div>
                 <div className="blurb-box" style={{height: 'auto'}}>
@@ -67,7 +68,6 @@ export class AboutUs extends React.Component{
                 </div>
                 <div className="horizontal-spacer"></div>
                 <div className="horizontal-spacer"></div>
-                <Footer/>
             </div>
         );
     }

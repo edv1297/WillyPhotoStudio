@@ -27,7 +27,7 @@
 		width: auto;
 		top: 27vw;
 		left: 10vw;
-		color:white;
+		color:#f7f7f7;
 		font-size: 2vw;
 	}
 
@@ -75,6 +75,7 @@
 				width: 7vw;
 				margin-top: 20px;
 				margin-left: calc(12.5vw - 3.5vw);
+
 				/*background-color: pink;*/
 			}
 
@@ -86,7 +87,7 @@
 				height: auto;
 				text-align: center;
 				margin-top: 20px;
-				color: white;
+				color: #171717;
 				font-size: 1.8vw;
 				margin-bottom: 15px;
 				font-weight: bolder;
@@ -97,7 +98,7 @@
 				float: left;
 				width: 70%;
 				margin-left: 15%;
-				color: white;
+				color: #171717;
 				font-size: 1.2vw;
 				text-align: justify;
 				text-justify: auto;
@@ -123,7 +124,7 @@
 
 	#learnmore-title{
 		width: 90vw;
-		font-size: 6vw;
+		font-size: 8vw;
 		position: absolute;
 		top: 34vh;
 		left: 5vw;
@@ -138,7 +139,7 @@
 		top: 58vh;
 		left: 10vw;
 		color:white;
-		font-size: 3.4vw;
+		font-size: 4.5vw;
 	}
 
 	button#signup-button{
@@ -192,7 +193,7 @@
 				height: auto;
 				text-align: center;
 				margin-top: 20px;
-				color: white;
+				color: #171717;
 				font-size: 25px;
 				margin-bottom: 15px;
 				font-weight: bolder;
@@ -203,7 +204,7 @@
 				float: left;
 				width: 70vw;
 				margin-left: 15vw;
-				color: white;
+				color: #171717;
 				font-size: 3.6vw;
 				text-align: justify;
 				text-justify: auto;
@@ -218,7 +219,7 @@
 	}
 }
 
-@media only screen and (width : 768px){ 
+@media only screen and (width : 768px){
 
 	#learnmore-title{
 		width: 90vw;

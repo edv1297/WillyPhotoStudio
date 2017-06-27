@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Nav } from "./Nav";
-import { NewsletterSignup } from './Landing';
+import { Newsletter } from './NewsLetterSignup';
 
 export const Producer = (props) => {
     return (<LearnMore type={"producer"}/>);
@@ -138,10 +138,10 @@ export class LearnMore extends React.Component{
 
         return(
             <div>
+                <link rel = "stylesheet" type = "text/css" href = 'css/learnmore.css'/>
                 <Nav collapsable={!isMobile()}/>
                 <div id="learnmore-main" style={portrait ? {width: '100vw'} : {height: '100vh'}}>
-                    {!portrait ? <img src={this.template["main-image"]} height="100%" style={{opacity:'0.6'}}/> : <img src={this.template["main-image"]} width="100%" style={{opacity:'0.6'}}/>}
-                    <div id="learnmore-title">{this.template["title"]}</div>
+                    {!portrait ? <img src={this.template["main-image"]} height="100%" style={{opacity:'0.6'}}/> : <img src={this.template["main-image"]} width="100%" style={{opacity:'0.6'}}/>}                    <div id="learnmore-title">{this.template["title"]}</div>
                     <div id="learnmore-subtitle">{this.template["subtitle"]}</div>
                     <button id="signup-button" className="btn btn-lg btn-success" onClick={this.goToSignUp}>
                         Sign Up as a {this.template["name"]}
@@ -189,7 +189,7 @@ export class LearnMore extends React.Component{
                 </div>
                 <div className="horizontal-spacer"></div>
                 <div className="horizontal-spacer"></div>
-                <NewsletterSignup />
+                <Newsletter/>
                 <div className="horizontal-spacer"></div>
                 <div className="horizontal-spacer"></div>
             </div>

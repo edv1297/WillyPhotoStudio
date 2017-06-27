@@ -89,6 +89,7 @@ export class Nav extends React.Component{
 
   			return(
 	  				<div>
+					<link rel = "stylesheet" type = "text/css" href = 'css/navigation.css'/>
 	  					<div className={this.state.classes.join(" ")} role="navigation">
 	  						<NavLogo ref={(child) => {this.logo = child}} initialState={this.state.collapsed} type="left"/>
 	  						<div id="navigator-dropdown-toggle" onClick={this.togglePopOutNavigator.bind(this)}>
@@ -112,6 +113,8 @@ export class Nav extends React.Component{
   			var tabHolderClass = ["navbar-tab-holder"];
 
   			return(
+				<div>
+				<link rel = "stylesheet" type = "text/css" href = 'css/navigation.css'/>
   				<div className={this.state.classes.join(" ")} role="navigation">
 	  				<div className={tabHolderClass.join(" ")} id="navbar-tab-holder-left">
 		  				<div className="navbar-tab navbar-tab-left navbar-tab-big"><a href="/producer">Producers<br/>Farms</a></div>
@@ -125,6 +128,7 @@ export class Nav extends React.Component{
 		  				<div className="navbar-tab navbar-tab-right"><a href="http://www.foodloveservices.com/users/sign_in">Login</a></div>
 	  				</div>
   				</div>
+				</div>
   				);
   		}
   	}

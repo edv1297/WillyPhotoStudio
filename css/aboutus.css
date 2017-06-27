@@ -10,9 +10,8 @@
 #aboutus-profiles{
 	width: 90vw;
 	height: auto;
-	float: right;
+	float: left;
 	position: sticky;
-	margin-right: calc(8vw);
 }
 
 .person-profile{

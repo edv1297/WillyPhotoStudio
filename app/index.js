@@ -11,6 +11,7 @@ import { Distributor } from "./components/LearnMore";
 import { Buyer } from "./components/LearnMore";
 import { Login } from "./components/Login";
 import { Footer } from "./components/Footer";
+import { Newsletter } from "./components/NewsLetterSignup";
 
 
 export const App = (props) => {
