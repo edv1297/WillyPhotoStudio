@@ -106,7 +106,7 @@ export class LearnMore extends React.Component{
     constructor(props){
         super(props);
 
-        window.document.body.style.backgroundColor = "#212942";
+        window.document.body.style.backgroundColor = "#f7f7f7";
 
         this.type = this.props.type;
 
@@ -140,7 +140,7 @@ export class LearnMore extends React.Component{
             <div>
                 <Nav collapsable={!isMobile()}/>
                 <div id="learnmore-main" style={portrait ? {width: '100vw'} : {height: '100vh'}}>
-                    {!portrait ? <img src={this.template["main-image"]} height="100%" style={{opacity:'0.5'}}/> : <img src={this.template["main-image"]} width="100%" style={{opacity:'0.5'}}/>}
+                    {!portrait ? <img src={this.template["main-image"]} height="100%" style={{opacity:'0.6'}}/> : <img src={this.template["main-image"]} width="100%" style={{opacity:'0.6'}}/>}
                     <div id="learnmore-title">{this.template["title"]}</div>
                     <div id="learnmore-subtitle">{this.template["subtitle"]}</div>
                     <button id="signup-button" className="btn btn-lg btn-success" onClick={this.goToSignUp}>

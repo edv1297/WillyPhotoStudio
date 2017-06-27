@@ -3,8 +3,7 @@
 }
 
 .footer-text{
-	filter: invert(99%);
-	color: inherit;
+	color: #232427;
 	float: left;
 	width: 33.3vw;
 	height: 50px;

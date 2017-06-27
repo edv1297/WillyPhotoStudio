@@ -2,29 +2,72 @@ import React from "react";
 
 import { Nav } from "./Nav";
 
-export const Landing = () => {
+export class Landing extends React.Component {
 
-    window.document.body.style.backgroundColor = "#232428";
+    constructor(){
+      super();
 
-    return(
-        <div>
-            <Nav collapsable={!isMobile()}/>
-            <div id="main-image" className="drop-shadow">
-                <img src={!isMobile() ? "assets/frontFacing/farmImage.png" : "assets/frontFacing/gallery-zoomin.png"} width="100%"/>
-                <div id="page-title-text" className="header-title">Uniting the local food community</div>
-                <img src="assets/arrow.svg" className="down-arrow-svg" id="main-scroll-down"/>
-                <div id="page-sub-title" className="header-title">One byte at a time.</div>
+      window.document.body.style.backgroundColor = "#f7f7f7";
+
+      this.state = {
+        portrait: (window.innerWidth / window.innerHeight > 1.97 || window.innerWidth / window.innerHeight < 1.5) && !isMobile()
+      }
+    }
+
+    componentDidMount(){
+      window.addEventListener('resize', this.handleResize.bind(this));
+    }
+
+    componentWillUnmount(){
+      window.removeEventListener('resize', this.handleResize.bind(this));
+    }
+
+    handleResize(){
+      const ratio = window.innerWidth / window.innerHeight;
+
+      this.setState({
+        portrait: ( ratio > 1.97 || ratio < 1.5) && !isMobile()
+      });
+    }
+
+    makeImage(){
+      var filepath = "";
+
+      if(!isMobile()){
+        filepath = "assets/frontFacing/farmImage.png";
+      }else{
+        filepath = "assets/frontFacing/gallery-zoomin.png";
+      }
+
+      if(!this.state.portrait){
+        return (<img src={filepath} height="100%"/>);
+      }else{
+        return (<img src={filepath} width="100%"/>)
+      }
+      
+    }
+
+    render(){
+        return(
+            <div>
+                <Nav collapsable={!isMobile()}/>
+                <div id="main-image" className="drop-shadow" style={this.state.portrait ? {width: '100vw'} : {height: '100vh'}}>
+                    {this.makeImage()}
+                    <div id="page-title-text" className="header-title">Uniting the local food community</div>
+                    <img src="assets/arrow.svg" className="down-arrow-svg" id="main-scroll-down"/>
+                    <div id="page-sub-title" className="header-title">One byte at a time.</div>
+                </div>
+                <div className="horizontal-spacer"/>
+                <Bio/>
+                <div className="horizontal-spacer"/>
+                <CustomerTypeSelection />
+                <div className="horizontal-spacer"/>
+                <NewsletterSignup/>
+                <div className="horizontal-spacer"/>
+                <div className="horizontal-spacer"/>
             </div>
-            <div className="horizontal-spacer"/>
-            <Bio/>
-            <div className="horizontal-spacer"/>
-            <CustomerTypeSelection />
-            <div className="horizontal-spacer"/>
-            <NewsletterSignup/>
-            <div className="horizontal-spacer"/>
-            <div className="horizontal-spacer"/>
-        </div>
-    );
+        );
+    }
 
 }
 
@@ -94,7 +137,7 @@ export const CustomerTypeSelection = (props) => {
             <div className="customer-type-button">
             <img src = "./assets/icons/wheat.svg" className = "icon"/>
                 <img src = "./assets/frontFacing/producer.png" width="100%"/>
-                <div className = "customer-type-main-blurb">Selling Products?</div>
+                <div className = "customer-type-main-blurb">Are you a local producer?</div>
                 <div className = "customer-type-description">Click to learn more</div>
             </div>
           </a>
