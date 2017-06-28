@@ -96,12 +96,14 @@
         margin-bottom: 6vw;
     }
 
+
     #bio-picture{
         width: 33vw;
         height: 57.42vw;
         float: right;
         margin-right: 2vw;
         margin-top: 3vw;
+        box-shadow: 4px 6px 5px rgba(0,0,0,.5);
     }
 
     .customer-type-button{

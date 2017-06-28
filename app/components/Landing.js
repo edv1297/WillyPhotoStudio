@@ -46,7 +46,7 @@ export class Landing extends React.Component {
       }else{
         return (<img src={filepath} width="100%" style={isMobile() ? {opacity: '0.6'} : {}}/>)
       }
-      
+
     }
 
     render(){
@@ -141,13 +141,14 @@ export const Bio = (props) => {
     return(
         <div id="bio" className="blurb-box">
             <div id="bio-header">This is our story</div>
+            <div className="horizontal-spacer"/>
             <div id="bio-picture">
                 {!isMobile() ? <img src={ "assets/frontFacing/blueBerries.jpg"} width="100%"/> :  <div/>}
             </div>
             <div id="bio-body">
               <div className="bio-content">
                   <div className="bio-icon">
-                      <img src="assets/icons/wheat.svg" height="100%"/>
+                      <img src="assets/icons/green_wheat.svg" height="100%"/>
                   </div>
                   <div className = "section-header">
                     We love local food.
@@ -160,7 +161,7 @@ export const Bio = (props) => {
               </div>
               <div className="bio-content">
                   <div className="bio-icon" id = 'truck-icon'>
-                      <img src="assets/icons/truck.svg" height="100%"/>
+                      <img src="assets/icons/white_truck.svg" height="100%"/>
                   </div>
                   <div className = "section-header">
                     {!isMobile() ? <span>Our platform revolutionizes<br/>the supply chain.</span> : <span>Our platform revolutionizes<br/>the supply chain.</span>}
