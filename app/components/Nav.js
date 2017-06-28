@@ -89,7 +89,7 @@ export class Nav extends React.Component{
 
   			return(
 	  				<div>
-					<link rel = "stylesheet" type = "text/css" href = 'css/navigation.css'/>
+					    <link rel = "stylesheet" type = "text/css" href = 'css/navigation.css'/>
 	  					<div className={this.state.classes.join(" ")} role="navigation">
 	  						<NavLogo ref={(child) => {this.logo = child}} initialState={this.state.collapsed} type="left"/>
 	  						<div id="navigator-dropdown-toggle" onClick={this.togglePopOutNavigator.bind(this)}>

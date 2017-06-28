@@ -2,6 +2,7 @@ import React from "react";
 
 import { Nav } from "./Nav";
 import { Footer } from "./Footer";
+import { Newsletter } from "./NewsletterSignup";
 
 export class Landing extends React.Component {
 
@@ -37,13 +38,13 @@ export class Landing extends React.Component {
       if(!isMobile()){
         filepath = "assets/frontFacing/farmImage.png";
       }else{
-        filepath = "assets/frontFacing/gallery-zoomin.png";
+        filepath = "assets/frontFacing/gallery-zoom.JPG";
       }
 
       if(!this.state.portrait){
-        return (<img src={filepath} height="100%"/>);
+        return (<img src={filepath} height="100%" style={isMobile() ? {opacity: '0.6'} : {}}/>);
       }else{
-        return (<img src={filepath} width="100%"/>)
+        return (<img src={filepath} width="100%" style={isMobile() ? {opacity: '0.6'} : {}}/>)
       }
       
     }
@@ -51,6 +52,7 @@ export class Landing extends React.Component {
     render(){
         return(
             <div>
+            <link rel = "stylesheet" type = "text/css" href = 'css/landing.css'/>
                 <Nav collapsable={!isMobile()}/>
                 <div id="main-image" className="drop-shadow" style={this.state.portrait ? {width: '100vw'} : {height: '100vh'}}>
                     {this.makeImage()}
@@ -63,7 +65,7 @@ export class Landing extends React.Component {
                 <div className="horizontal-spacer"/>
                 <CustomerTypeSelection />
                 <div className="horizontal-spacer"/>
-                <NewsletterSignup/>
+                <Newsletter/>
                 <div className="horizontal-spacer"/>
                 <div className="horizontal-spacer"/>
             </div>

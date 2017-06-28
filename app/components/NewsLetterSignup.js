@@ -47,30 +47,34 @@ export class Newsletter extends React.Component{
     }
 
     render(){
-        let allContacts = this.props.contacts;
+        const allContacts = this.props.contacts;
+
         return (
 
-        <div>
-            <link rel = "stylesheet" type = "text/css" href = 'css/newsletter.css'/>
+            <div>
+                <link rel="stylesheet" type = "text/css" href = 'css/newsletter.css'/>
 
-            <div className="header-title" style={{marginTop: '30px', fontSize: '40px'}}>
-                Would you like to hear from us?
-            </div>
-
-            <div className="header-title" style={{marginTop: '90px', fontSize: '20px'}}>
-                Submit your email address for our newsletter
-                <input id="email-input" placeholder="yourname@mail.com" ref = "email"/>
-            </div>
-
-                <div className  = "news-letter-signup">
-                <input id="first-name-input" placeholder="First name" ref = "firstName"/>
-                <input id="last-name-input" placeholder="Last name" ref = "lastName"/>
-
-                <button onClick = {this.handleSubmit.bind(this)} type = "submit"> Submit</button>
+                <div className="header-title newsletter-header" style={{fontSize: '27px'}}>
+                    Would you like to hear from us?
                 </div>
 
-    </div>
-    );
+                <div className="header-title newsletter-header" >
+                    Submit your email address for our newsletter
+                </div>
+
+                <div id="input-container">
+                    <input className="news-letter-signup" placeholder="First name" ref="firstName"/>
+                    <input className="news-letter-signup" placeholder="Last name" ref="lastName"/>
+                    <input className="news-letter-signup" placeholder="yourname@mail.com" ref = "email"/>
+
+                    <button onClick = {this.handleSubmit.bind(this)} type = "submit">Submit</button>
+                </div>
+
+            </div>
+        );
 }
 
 }
+
+
+                
