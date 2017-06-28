@@ -76,7 +76,7 @@ const LearnMoreTemplates = {
         "name": "Buyer",
         "main-image": "assets/learnMore/buyers.jpg",
         "title": <span>You have a business to run.<br/>We’ve got your back.</span>,
-        "subtitle": <span>Simple, powerful tools that make working with<br/>buyers and producers efficient and effective.</span>,
+        "subtitle": <span>Simple, powerful tools that make working with buyers and producers efficient and effective.</span>,
         "features":{
             "1": {
                 "icon": "mobile.svg",
@@ -141,7 +141,8 @@ export class LearnMore extends React.Component{
                 <link rel="stylesheet" type = "text/css" href = 'css/learnmore.css'/>
                 <Nav collapsable={!isMobile()}/>
                 <div id="learnmore-main" className="drop-shadow" style={portrait ? {width: '100vw'} : {height: '100vh'}}>
-                    {!portrait ? <img src={this.template["main-image"]} height="100%" style={{opacity:'0.6'}}/> : <img src={this.template["main-image"]} width="100%" style={{opacity:'0.6'}}/>}                    <div id="learnmore-title">{this.template["title"]}</div>
+                    {!portrait ? <img src={this.template["main-image"]} height="100%" style={{opacity:'0.6'}}/> : <img src={this.template["main-image"]} width="100%" style={{opacity:'0.6'}}/>}                    
+                    <div id="learnmore-title">{this.template["title"]}</div>
                     <div id="learnmore-subtitle">{this.template["subtitle"]}</div>
                     <button id="signup-button" className="btn btn-lg btn-success" onClick={this.goToSignUp}>
                         Sign Up as a {this.template["name"]}
@@ -181,8 +182,6 @@ export class LearnMore extends React.Component{
                         </div>
                     </div>
                 </div>
-                <div className="horizontal-spacer"></div>
-                <div className="horizontal-spacer"></div>
                 <div className="horizontal-spacer"></div>
                 <div id="signup-big">
                     <button id="signup-big-button" className="btn btn-lg btn-success" onClick={this.goToSignUp}>Sign Up Now!</button>

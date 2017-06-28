@@ -2,6 +2,7 @@
 	font-size: calc(10px + 2vw);
 	position: relative;
 	float: left;
+	width: 100vw;
 }
 
 #form-container{
@@ -26,7 +27,7 @@ input.contact-input{
 	width: 40vw;
 	height: 45px;
 	font-size: 18px;
-	background-color: var(--white);
+	background-color: #e7e7e7;
 	color: black;
 	border-bottom: none;
 	border-left: solid;
@@ -47,10 +48,12 @@ textarea.contact-textarea{
 	border-bottom: none;
 	border-left: solid;
 	border-width: 4px;
+	background-color: #e7e7e7;
 }
 
 #contact-submit{
 		position: relative;
+		float: left;
 	    text-align: center;
 		margin-top: 2vw;
 }
@@ -66,6 +69,7 @@ textarea.contact-textarea{
 		font-size: calc(30px + 2vw);
 		position: relative;
 		text-align: center;
+		width: 100vw;
 	}
 
 }
@@ -78,11 +82,13 @@ textarea.contact-textarea{
 	}
 
 	#contactus-page-title{
-		font-size: 30px;
+		font-size: 27px;
 		position: relative;
 		float: left;
 		line-height: 32px;
 		margin-bottom: 20px;
+		width: 90vw;
+		margin-left: 5vw;
 	}
 	input.contact-input{
 		/*border: solid;*/
@@ -97,6 +103,7 @@ textarea.contact-textarea{
 		border-bottom: none;
 		border-left: solid;
 		border-width: 4px;
+		background-color: #e7e7e7;
 	}
 
 	textarea.contact-textarea{
@@ -112,5 +119,6 @@ textarea.contact-textarea{
 		border-bottom: none;
 		border-left: solid;
 		border-width: 4px;
+		background-color: #e7e7e7;
 	}
 }

@@ -7,13 +7,13 @@ export class Contact extends React.Component{
         super(props);
         
         //backgroundColor
-        window.document.body.style.backgroundColor = "#353C53";
+        window.document.body.style.backgroundColor = "#f7f7f7";
     }
 
     render(){
         return(
             <div>
-                <link rel = "stylesheet" type = "text/css" href = 'css/contact.css'/>
+                <link rel="stylesheet" type="text/css" href='css/contact.css'/>
                 <Nav collapsable={false}/>
                 <div className="navbar-replace"></div>
                 <div className="header-title" id="contactus-page-title">Have a question or comment?</div>

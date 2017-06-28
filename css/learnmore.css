@@ -90,7 +90,7 @@
 				color: #171717;
 				font-size: 1.8vw;
 				margin-bottom: 15px;
-				font-weight: bolder;
+				font-family: 'AvenirBlack';
 			}
 
 			.feature-text{
@@ -120,11 +120,12 @@
 		float: left;
 		overflow: hidden;
 		margin-top: 50px;
+		background-color: black;
 	}
 
 	#learnmore-title{
 		width: 90vw;
-		font-size: 8vw;
+		font-size: 7vw;
 		position: absolute;
 		top: 34vh;
 		left: 5vw;
@@ -136,10 +137,10 @@
 		width:80vw;
 		text-align: center;
 		position: absolute;
-		top: 58vh;
+		top: 50vh;
 		left: 10vw;
 		color:white;
-		font-size: 4.5vw;
+		font-size: 4vw;
 	}
 
 	button#signup-button{
@@ -196,7 +197,7 @@
 				color: #171717;
 				font-size: 25px;
 				margin-bottom: 15px;
-				font-weight: bolder;
+				font-family: 'AvenirBlack';
 			}
 
 			.feature-text{
