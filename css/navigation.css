@@ -1,32 +1,34 @@
 :root{
-    --navbar-open-height: 150px;
-    --navbar-closed-height: 50px;
-    --navbar-tab-height: 40px;
+    --navbar-open-height: 100vh;
+    --navbar-closed-height: 100vh;
+    --navbar-tab-height: 60px;
 }
 
 a {
     color: inherit;
     text-decoration: none !important;
+    height:3vh;
+    position:relative;
+    margin-bottom:1vw;
+    z-index: 4 !important;
+
 }
 
 
 div.navigator{
-    width: 100vw;
     position: fixed;
     top: 0;
     z-index: 20;
+    heigh:100vh;
 }
 
-div.navigator-full{
-    background-color: transparent;
-    height: var(--navbar-open-height);
-    color: var(--white);
+.navigation-container{
+  margin-top:30vh;
 }
 
 div.navigator-small{
-    background-color: var(--white);
+    background-color: #171717;
     height: var(--navbar-closed-height);
-    color: black;
 }
 
 div.navbar-collapse-anim{
@@ -34,7 +36,7 @@ div.navbar-collapse-anim{
 }
 
 div.navbar-open-anim{
-    animation: expand 0.5s 1;
+    animation: expand 0.5s 4;
 }
 
 @keyframes collapse{
@@ -53,7 +55,7 @@ div.navbar-open-anim{
 
 @keyframes expand{
     0%{
-    background-color: var(--white);
+    background-color: black;
     height: var(--navbar-closed-height);
     opacity: 1;
     color: black;
@@ -61,8 +63,8 @@ div.navbar-open-anim{
     100%{
     background-color: transparent;
     height: var(--navbar-open-height);
-    opacity: 0.7;
-    color: var(--white);
+
+    color: black;
     }
 }
 
@@ -73,13 +75,13 @@ div#logo-main{
 div.logo-centered-larger{
     width: 25.2vw;
     max-width: 380px;
-    left: calc(50vw - 12.6vw);
+    left: 1vw;
     top: calc(50% - 3.5vw);
     text-align: center;
 }
 
 div.logo-centered-shrunken{
-    left: calc(50vw - 75px);
+    left: 1vw;
 }
 
 @media only screen and (min-width : 1500px){
@@ -112,38 +114,48 @@ div.logo-shrunken{
 
 
 div#navbar-tab-holder-left{
-    left: 13vw;
+    margin-bottom: 2vw;
+    position: fixed;
+    height:2vw;
+    opacity:1;
 }
 
 div#navbar-tab-holder-right{
-    right: 13vw;
+    top: 20vw;
+    height: 2vw;
+    position:relative;
+
 }
 
 div.navbar-tab{
-    height: var(--navbar-tab-height) !important;
-    width: 2;
+    height: 2vw;
+    width: 2vw;
+    margin-left: 20px;
+    margin-bottom:25px;
     position: relative;
-    float: left;
     line-height: var(--navbar-tab-height);
     text-align: center;
 }
 
 div.navbar-tab-left{
-    width: calc(100% / 3);
-    height: auto;
+    width: 3vh;
+    height: 3vh;
+    left:0;
+    position:relative;
 }
 
 div.navbar-tab-right{
-    width: calc(100% / 3);
+    position:relative;
     height: auto;
+    left:0;
 }
 
 div#navigator-dropdown-toggle{
     height: 50px;
     width: 50px;
     position: absolute;
-    top: calc(50% - 25px);
-    right: 8vw;
+    top: 20px;
+    left:2vw;
 }
 
 div#popout-navigator{
@@ -155,30 +167,39 @@ div#popout-navigator{
 }
 
 .popnavi-links{
-    width: 80vw;
-    left: 10vw;
-    top: 14vw;
-    position: absolute;
+    width: 15vw;
+    height: 1vw;
+    left: 1vw;
+    top: 0vw;
+    position: fixed;
 }
 
 @media only screen and (min-width : 771px){
     .popnavi-link{
-        width: 100%;
-        font-size: 3vw;
-        color: white;
-        position: relative;
-        float: left;
+        left:3vw;
+        color:white;
+        font-size: calc(20px + 1vw);
         margin-top: 20px;
+        float:left;
+        position: relative;
+        top:60px;
     }
 
+    .popnavi-link:hover{
+
+  }
     div.navbar-tab-big{
-        line-height: 20px;
+        line-height: 40px;
+        left:0;
+        position:relative;
+        height:2vw;
     }
     div.navbar-tab-holder{
       height: 30px;
-      width: calc(100vw / 4);
+      width: 10vw;
       position: absolute;
-      top: calc(50% - var(--navbar-tab-height) / 2) !important;
+      left:0;
+      top: 0 !important;
       font-size: 1.25vw;
     }
 
@@ -196,19 +217,21 @@ div#popout-navigator{
     }
 
     div.navbar-tab-holder{
-      height: 30px;
-      width: calc(100vw / 4);
-      position: absolute;
-      top: calc(55% - var(--navbar-tab-height) / 2) !important;
-      font-size: .9vw;
-
+      height: 2vw;
+      position: static;
+      top: 0;
+      font-size: calc(1.8vw-20);
     }
 
 
 
     div.navbar-tab-big{
-      line-height: .7vw;
-      font-size: .7vw;
+      height: 2vw;
+      position:relative;
+      font-size: 2vw;
+      left:10px;
+      top:2vw;
+      float:left;
     }
 
 }
@@ -229,9 +252,9 @@ div#popout-navigator{
     }
     div.navbar-tab-holder{
       height: 30px;
-      width: calc(100vw / 4);
-      position: absolute;
-      top: calc(50% - var(--navbar-tab-height) / 2) !important;
+      width: 10vw
+      position: relative;
+      top: 0;
       font-size: 1.25vw;
     }
 }
