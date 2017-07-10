@@ -28,7 +28,7 @@ export class Landing extends React.Component {
       const ratio = window.innerWidth / window.innerHeight;
 
       this.setState({
-        portrait: ( ratio > 1.97 || ratio < 1.5) && !isMobile()
+        portrait: !isMobile()
       });
     }
 
@@ -36,9 +36,9 @@ export class Landing extends React.Component {
       var filepath = "";
 
       if(!isMobile()){
-        filepath = "assets/frontFacing/farmImage.png";
+        filepath = "assets/pics/Our Wedding  (264) copy.jpg";
       }else{
-        filepath = "assets/frontFacing/gallery-zoom.JPG";
+        filepath = "assets/pics/mobile.jpg";
       }
 
       if(!this.state.portrait){
@@ -46,7 +46,7 @@ export class Landing extends React.Component {
       }else{
         return (<img src={filepath} width="100%" style={isMobile() ? {opacity: '0.6'} : {}}/>)
       }
-      
+
     }
 
     render(){
@@ -54,11 +54,8 @@ export class Landing extends React.Component {
             <div>
             <link rel = "stylesheet" type = "text/css" href = 'css/landing.css'/>
                 <Nav collapsable={!isMobile()}/>
-                <div id="main-image" className="drop-shadow" style={this.state.portrait ? {width: '100vw'} : {height: '100vh'}}>
+                <div className="main-image" style={this.state.portrait ? {width: '100%',  height:'100%'} : {height: '100vh', width:'100vw'}}>
                     {this.makeImage()}
-                    <div id="page-title-text" className="header-title">Uniting the local food community</div>
-                    <img src="assets/arrow.svg" className="down-arrow-svg" id="main-scroll-down"/>
-                    <div id="page-sub-title" className="header-title">One byte at a time.</div>
                 </div>
                 <div className="horizontal-spacer"/>
                 <Bio/>
@@ -74,7 +71,7 @@ export class Landing extends React.Component {
 
 }
 
-export const MainLinks = (props) => {
+export const MiniGallery = (props) => {
     return(
         <div className="blurb-box" style={{height: 'auto'}}>
 
@@ -102,6 +99,37 @@ export const MainLinks = (props) => {
     );
 }
 
+export const GalleryPanel = (props) =>{
+  return (
+<div>
+        <div className = "horizontal-spacer"/>
+        <div className = "descriptive-portfolio-text"> The selected of </div>
+        <div className = "portfolio-text">Portfolio</div>
+        <div className = "horizontal-spacer"/>
+
+      <div className  = "content">
+        <div className = "photo-panel-left">
+          <img src = "assets/couples.jpg"/>
+          <Image source = "assets/details-1.jpg"/>
+            <Image source = "assets/makeup.jpg"/>
+        </div>
+        <div className = "photo-panel-center">
+          <Image source = 'assets/couples.jpg'/>
+          <Image source = 'assets/details-1.jpg'/>
+          <Image source = 'assets/makeup.jpg'/>
+        </div>
+        <div className = "photo-panel-right">
+          <Image source = 'assets/couples.jpg'/>
+          <Image source = 'assets/details-1.jpg'/>
+          <Image source = 'assets/makeup.jpg'/>
+        </div>
+      </div>
+    </div>
+
+
+
+  );
+}
 export const CustomerTypeSelection = (props) => {
 
     return(
@@ -140,14 +168,17 @@ export const CustomerTypeSelection = (props) => {
 export const Bio = (props) => {
     return(
         <div id="bio" className="blurb-box">
-            <div id="bio-header">This is our story</div>
+        <div className = "horizontal-spacer"/>
+          <div className = "descriptive-portfolio-text"> The selected of </div>
+          <div className = "portfolio-text">Portfolio</div>
+        <div className = "horizontal-spacer"/>
             <div id="bio-picture">
                 {!isMobile() ? <img src={ "assets/frontFacing/blueBerries.jpg"} width="100%"/> :  <div/>}
             </div>
             <div id="bio-body">
               <div className="bio-content">
                   <div className="bio-icon">
-                      <img src="assets/icons/wheat.svg" height="100%"/>
+                      <img src="assets/icons/green_wheat.svg" height="100%"/>
                   </div>
                   <div className = "section-header">
                     We love local food.
@@ -160,7 +191,7 @@ export const Bio = (props) => {
               </div>
               <div className="bio-content">
                   <div className="bio-icon" id = 'truck-icon'>
-                      <img src="assets/icons/truck.svg" height="100%"/>
+                      <img src="assets/icons/white_truck.svg" height="100%"/>
                   </div>
                   <div className = "section-header">
                     {!isMobile() ? <span>Our platform revolutionizes<br/>the supply chain.</span> : <span>Our platform revolutionizes<br/>the supply chain.</span>}

@@ -51,30 +51,36 @@ export class Newsletter extends React.Component{
 
         return (
 
-            <div>
+            <div style = {{backgroundColor : "pink"}}>
                 <link rel="stylesheet" type = "text/css" href = 'css/newsletter.css'/>
+                    <div id="mc_embed_signup_scroll">
+                    <div className="header-title newsletter-header" >
+                        Submit your email address for our newsletter
+                    </div>
+                    <div className="header-title newsletter-header" style={{fontSize: '27px'}}>
+                        Would you like to hear from us?
+                    </div>
+                    <div id="input-container">
+                        <form action="//foodloveservices.us16.list-manage.com/subscribe/post?u=8628b16c54dfa9979180a1c26&amp;id=15fa375799" method="post"
+                            id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate"
+                            target="_blank" noValidate>
+                        <div className="indicates-required">
+                            <span className="asterisk">*</span> indicates required
+                        </div>
+                            <input className="news-letter-signup" type="email"  name="EMAIL" id="mce-EMAIL" placeholder = "yourname@email.com*"/>
+                            <input className="news-letter-signup" type="text"  name="FNAME" id="mce-FNAME" placeholder = "First name"/>
+                            <input className="news-letter-signup" type="text" name="LNAME" id="mce-LNAME" placeholder = "Last name"/>
 
-                <div className="header-title newsletter-header" style={{fontSize: '27px'}}>
-                    Would you like to hear from us?
+                        <div style={{position: "absolute", left:"-5000px", ariaHidden:"true"}}>
+                            <input type="text" name="b_8628b16c54dfa9979180a1c26_15fa375799" tabIndex="-1" value=""/>
+                        </div>
+
+                                <button className = "btn btn-lg btn-success" style = {{marginTop: "30px", float:"left", width: "60%", marginLeft: "20%" }}>Subscribe</button>
+                        </form>
+                        </div>
+                    </div>
                 </div>
-
-                <div className="header-title newsletter-header" >
-                    Submit your email address for our newsletter
-                </div>
-
-                <div id="input-container">
-                    <input className="news-letter-signup" placeholder="First name" ref="firstName"/>
-                    <input className="news-letter-signup" placeholder="Last name" ref="lastName"/>
-                    <input className="news-letter-signup" placeholder="yourname@mail.com" ref = "email"/>
-
-                    <button onClick = {this.handleSubmit.bind(this)} type = "submit">Submit</button>
-                </div>
-
-            </div>
-        );
+                    );
 }
 
 }
-
-
-                

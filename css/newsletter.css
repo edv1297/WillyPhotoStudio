@@ -15,9 +15,8 @@ input.news-letter-signup{
     margin-top: 20px;
     font-size: 20px;
     float: left;
-
-    background-color: white;
-    border: solid;
+    background-color: transparent;
+    /*border: solid;*/
     border-width: 1px;
 }
 
@@ -27,6 +26,16 @@ input.news-letter-signup{
     float: left;
     margin-left: calc(50vw - 200px);
 }
+
+#submit-news {
+	margin-top:10vw;
+}
+
+.asterik{
+	text-align: center;
+}
+
+
 
 /* mobile */
 @media only screen and (max-width : 767px) {

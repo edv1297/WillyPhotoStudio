@@ -5,7 +5,7 @@ import { Nav } from "./Nav";
 export class Contact extends React.Component{
     constructor(props){
         super(props);
-        
+
         //backgroundColor
         window.document.body.style.backgroundColor = "#f7f7f7";
     }
