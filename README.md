@@ -1,4 +1,4 @@
-# food_love_web
+# Willy's Photo Studio
 
 ## Dependencies
 
