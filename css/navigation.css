@@ -1,0 +1,260 @@
+:root{
+    --navbar-open-height: 100vh;
+    --navbar-closed-height: 100vh;
+    --navbar-tab-height: 60px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none !important;
+    height:3vh;
+    position:relative;
+    margin-bottom:1vw;
+    z-index: 4 !important;
+
+}
+
+
+div.navigator{
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    heigh:100vh;
+}
+
+.navigation-container{
+  margin-top:30vh;
+}
+
+div.navigator-small{
+    background-color: #171717;
+    height: var(--navbar-closed-height);
+}
+
+div.navbar-collapse-anim{
+    animation: collapse 0.5s 1;
+}
+
+div.navbar-open-anim{
+    animation: expand 0.5s 4;
+}
+
+@keyframes collapse{
+    0% {
+    background-color: transparent;
+    height: var(--navbar-open-height);
+    color: var(--white);
+    }
+    100% {
+    background-color: var(--white);
+    height: var(--navbar-closed-height);
+    opacity: 1;
+    color: black;
+    }
+}
+
+@keyframes expand{
+    0%{
+    background-color: black;
+    height: var(--navbar-closed-height);
+    opacity: 1;
+    color: black;
+    }
+    100%{
+    background-color: transparent;
+    height: var(--navbar-open-height);
+
+    color: black;
+    }
+}
+
+div#logo-main{
+    position: absolute;
+}
+
+div.logo-centered-larger{
+    width: 25.2vw;
+    max-width: 380px;
+    left: 1vw;
+    top: calc(50% - 3.5vw);
+    text-align: center;
+}
+
+div.logo-centered-shrunken{
+    left: 1vw;
+}
+
+@media only screen and (min-width : 1500px){
+    div.logo-centered-larger{
+        height: 100px;
+        width: 380px;
+        left: calc(50vw - 190px);
+        top: calc(50% - 50px);
+        text-align: center;
+    }
+}
+
+div.logo-left{
+    left: 3vw;
+    width: 175px;
+
+}
+
+div.logo-left-larger{
+
+    top: calc(50% - 25px);
+
+}
+
+div.logo-shrunken{
+    height: auto;
+    width: 150px;
+    top: 6px;
+}
+
+
+div#navbar-tab-holder-left{
+    margin-bottom: 2vw;
+    position: fixed;
+    height:2vw;
+    opacity:1;
+}
+
+div#navbar-tab-holder-right{
+    top: 20vw;
+    height: 2vw;
+    position:relative;
+
+}
+
+div.navbar-tab{
+    height: 2vw;
+    width: 2vw;
+    margin-left: 20px;
+    margin-bottom:25px;
+    position: relative;
+    line-height: var(--navbar-tab-height);
+    text-align: center;
+}
+
+div.navbar-tab-left{
+    width: 3vh;
+    height: 3vh;
+    left:0;
+    position:relative;
+}
+
+div.navbar-tab-right{
+    position:relative;
+    height: auto;
+    left:0;
+}
+
+div#navigator-dropdown-toggle{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    left:2vw;
+}
+
+div#popout-navigator{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    z-index: 10;
+}
+
+.popnavi-links{
+    width: 15vw;
+    height: 1vw;
+    left: 1vw;
+    top: 0vw;
+    position: fixed;
+}
+
+@media only screen and (min-width : 771px){
+    .popnavi-link{
+        left:3vw;
+        color:white;
+        font-size: calc(20px + 1vw);
+        margin-top: 20px;
+        float:left;
+        position: relative;
+        top:60px;
+    }
+
+    .popnavi-link:hover{
+
+  }
+    div.navbar-tab-big{
+        line-height: 40px;
+        left:0;
+        position:relative;
+        height:2vw;
+    }
+    div.navbar-tab-holder{
+      height: 30px;
+      width: 10vw;
+      position: absolute;
+      left:0;
+      top: 0 !important;
+      font-size: 1.25vw;
+    }
+
+}
+
+@media only screen and (min-width : 1850px){
+
+    .popnavi-link{
+        width: 100%;
+        font-size: 3vw;
+        color: white;
+        position: relative;
+        float: left;
+        margin-top: 20px;
+    }
+
+    div.navbar-tab-holder{
+      height: 2vw;
+      position: static;
+      top: 0;
+      font-size: calc(1.8vw-20);
+    }
+
+
+
+    div.navbar-tab-big{
+      height: 2vw;
+      position:relative;
+      font-size: 2vw;
+      left:10px;
+      top:2vw;
+      float:left;
+    }
+
+}
+
+@media only screen and (max-width : 770px){
+    .popnavi-link{
+        width: 100%;
+        font-size: calc(20px + 1vw);
+        color: white;
+        position: relative;
+        float: left;
+        margin-top: 20px;
+    }
+
+    div.navbar-tab-big{
+        line-height: 1vw;
+        font-size: 1vw;
+    }
+    div.navbar-tab-holder{
+      height: 30px;
+      width: 10vw
+      position: relative;
+      top: 0;
+      font-size: 1.25vw;
+    }
+}

@@ -1,0 +1,121 @@
+:root{
+	 --white: #f7f7f7;
+}
+
+.footer-text{
+	color: #232427;
+	float: left;
+	width: 33.3vw;
+	height: 50px;
+	line-height: 50px;
+	font-size: .9vw;
+	font-family: 'Avenir-Light';
+	text-align: center;
+}
+
+#footer{
+    height: 50px;
+    width: 100vw;
+    position: relative;
+    float: left;
+    bottom: 0px;
+}
+
+.page{
+	height: 100vh;
+}
+
+@font-face {
+	font-family: 'AvenirLight';
+	src: url('AvenirLTStd-Light.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'AvenirBlack';
+	src: url('Avenir-Black.otf') format('opentype');
+}
+
+body {
+	font-family: 'AvenirLight';
+	overflow-y: scroll;
+	margin: 0;
+	padding: 0;
+}
+
+.page{
+	background-color: #232428;
+	width: 100vw;
+}
+
+.drop-shadow{
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
+}
+
+.blurb-box{
+    width: 100vw;
+	height: 10vw;
+	min-height: 200px;
+    float: left;
+/*    background-color: #232428;
+*/}
+
+img.down-arrow-svg{
+	width: 100vw;
+	text-align: center;
+	height: 25px;
+}
+
+@media only screen and (min-width : 771px){
+    .horizontal-spacer{
+	    width: 100vw;
+	    float: left;
+	    height: 50px;
+	}
+}
+
+input#email-input{
+	position: relative;
+	width: 300px;
+    margin-left: 30vw;
+	height: 40px;
+	margin-top: 20px;
+	background-color: "orange";
+	font-size: 20px;
+}
+
+input:focus{
+	outline: none;
+	border-color: #00ffff;
+}
+
+.header-title{
+    position: relative;
+    text-align: center;
+    height: auto;
+    float: left;
+}
+
+
+@media only screen and (max-width : 770px){
+     .horizontal-spacer{
+	    width: 100vw;
+	    float: left;
+	    height: 20px;
+	}
+}
+
+textarea, input {
+ 	border: none;
+ 	color: var(--white);
+ 	border-bottom: solid;
+ 	border-bottom-width: 2px;
+ 	border-radius: 2px;
+	text-align: center;
+ 	background-color: #7A7B7E;
+ 	resize: none;
+ }
+
+ textarea:focus, input:focus{
+ 	outline: none;
+ 	border-color: #13E0F4;
+ }
